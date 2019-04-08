@@ -2,9 +2,9 @@
 ## Proyecto Pre-Feria
 
 ---?color=linear-gradient(to left, #56ccf2, #2f80ed)
-@snap[west span-50](Idea principal###La idea principal sobre el proyecto de pre-feria es hacer la estructura de una base de datos de un tacografo digital)
+@snap[west span-30](Idea principal###La idea principal sobre el proyecto de pre-feria es hacer la estructura de una base de datos de un tacografo digital)
 @snapend
-@snap[west span-50](¿Y que es un tacografo digital?###> Un tacografo digital es un aparato electrónico que se encarga de registrar eventos en la conducción de vehiculos, su precursor fué el tacografo analógico, el cuál esta previsto que desaparezca completamente por el digital.)
+@snap[east span-30](¿Y que es un tacografo digital?###> Un tacografo digital es un aparato electrónico que se encarga de registrar eventos en la conducción de vehiculos, su precursor fué el tacografo analógico, el cuál esta previsto que desaparezca completamente por el digital.)
 @snapend
 
 +++?color=linear-gradient(to left, #56ccf2, #2f80ed)
