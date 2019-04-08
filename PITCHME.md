@@ -27,7 +27,7 @@
 ---?color=black
 
 @snap[north-west span-35]
-@box[bg-green text-white box-padding](1. Plan#Lorem ipsum dolor sit amet eiusmod)
+@box[bg-green text-white box-padding](Funcionamiento#El tacógrafo digital obtiene datos relativos a los tiempos de conducción y descansos del conductor. Esta información es la más importante de todas y constituye el sentido fundamental del tacógrafo.)
 @snapend
 
 @snap[north-east span-35]
