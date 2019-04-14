@@ -1,0 +1,4 @@
+
+theme-override : src/css/PITCHME.css
+theme : moon
+transition : fade

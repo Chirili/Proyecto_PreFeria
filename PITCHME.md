@@ -1,6 +1,8 @@
 ---?color=linear-gradient(to left, #56ccf2, #2f80ed)
-## Proyecto Pre-Feria
-
+@snap[midpoint h1-portada h2-nombre]
+# Proyecto Pre-Feria
+## Andrés Carmona Lozano
+@snapend
 ---?color=linear-gradient(to left, #56ccf2, #2f80ed)
 @snap[west span-30](Idea principal###La idea principal sobre el proyecto de pre-feria es hacer la estructura de una base de datos de un tacografo digital)
 @snapend
