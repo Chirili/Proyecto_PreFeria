@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 
 theme-override : src/css/PITCHME.css
 theme : moon
 transition : fade
+=======
+# Personal Theme
+theme: choice
+>>>>>>> 320b19b82bcd00466b36471ac437f120382678d1
