@@ -210,8 +210,8 @@ li.li-nested-item #text{
 }
 
 /*Felchas css*/
-.aentidad{
-position: relative;
-bottom: 100px;
-text-shadow: 0 0 80px rgba(255,255,255,0.6);
+.aentidad {
+    margin-top: 10%;
+    margin-left: 12%;
+    text-shadow: 0 0 80px rgba(255,255,255,0.6);
 }
