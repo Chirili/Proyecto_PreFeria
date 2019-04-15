@@ -14,3 +14,24 @@
 @snap[east span-40]
 @box[idea](¿Y que es un tacografo digital?# Un tacografo digital es un aparato electrónico que se encarga de registrar eventos en la conducción de vehiculos, su precursor fué el tacografo analógico, el cuál esta previsto que desaparezca completamente por el digital.)
 @snapend
+
+---
+@snap[west span-40]
+@box[idea](Funcionamiento#El tacógrafo digital obtiene datos relativos a los tiempos de conducción y descansos del conductor. Esta información es la más importante de todas y constituye el sentido fundamental del tacógrafo.)
+@snapend
+
+@snap[east span-40]
+@box[idea](Datos#Los eventos recogidos por el tacógrafo incluyen:)
+@ul[funcionamiento_lista](false)
+
+    - Conducción, descanso, otros trabajos.
+    - Excesos de velocidad.
+    - Errores en el sistema.
+    - Conducción sin tarjeta.
+    - Transferencias de datos: estos datos son almacenados tanto en la memoria del tacógrafo como en la de la tarjeta.
+@ulend
+@snapend
+
+@snap[north-east span-40]
+@quote[Si quieres ver un modelo ya implantado y en funcionamiento visita: https://tachoexplorer.es/]
+@snapend

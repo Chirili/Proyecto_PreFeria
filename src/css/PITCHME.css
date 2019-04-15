@@ -154,3 +154,13 @@
     text-align: left;
     text-shadow: 0 0 80px rgba(255,255,255,0.6);
 }
+.funcionamiento_lista{
+            content: "\2713 ";
+			font-size: 1.2em;
+			margin-left: -40px;
+			margin-right: 40px;
+			padding: .2em .45em .2em .45em;
+			position: relative;
+			color: white;
+			background-color: lighten(#859a31, 0%);
+}
