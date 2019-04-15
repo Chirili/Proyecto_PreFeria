@@ -115,8 +115,18 @@
     display: inline-block;
     border-bottom: 4px double rgba(255,255,255,.25);
     border-width: 4px 0;
+    text-shadow: 0 0 80px rgba(255,255,255,.5);
     padding: 1.5em 0em;
     position: absolute;
     width: 40em;
     margin: 0 0 0 -20em;
+}
+
+.idea{
+    -moz-border-radius-topright: 20px;
+    -webkit-border-top-right-radius: 20px;
+    border-top-right-radius: 20px;
+    -moz-border-radius-bottomleft: 20px;
+    -webkit-border-bottom-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
