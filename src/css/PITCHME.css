@@ -164,3 +164,7 @@
 			color: white;
 			background-color: lighten(#859a31, 0%);
 }
+
+li.li-nested-item #text{
+        font-size: 0.6em;
+}
