@@ -196,3 +196,12 @@ li.li-nested-item #text{
     text-align: center;
     text-shadow: 0 0 80px rgba(255,255,255,0.6);
 }
+.datos {
+    position: relative;
+    bottom: 160px;
+    left: 480px;
+}
+.entidad_relacion{
+        color:gray;
+        font-size: 0.6em !important;
+}

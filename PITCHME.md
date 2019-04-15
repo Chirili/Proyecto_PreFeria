@@ -20,7 +20,7 @@
 @box[idea](Funcionamiento#El tacógrafo digital obtiene datos relativos a los tiempos de conducción y descansos del conductor. Esta información es la más importante de todas y constituye el sentido fundamental del tacógrafo.)
 @snapend
 
-@snap[south-east span-60]
+@snap[south-east span-60 datos]
 @box[idea](Datos#Los eventos recogidos por el tacógrafo incluyen:)
 @ul[funcionamiento_lista](false)
 
@@ -35,3 +35,7 @@
 @snap[north-east span-60]
 @quote[Si quieres ver un modelo ya implantado y en funcionamiento visita: https://tachoexplorer.es/]
 @snapend
+
+@css[entidad_relacion](Modelo Entidad-Relacion)
+
+@fa[arrow-down]
