@@ -79,7 +79,8 @@
 .text-right  { text-align: right; }
 /*H1*/
 
-.h1-heading {font: 700 4em/1 "Oswald", sans-serif;
+.h1-heading {font: "Oswald", sans-serif;
+             font-size: 2em;
              letter-spacing: 0;
              padding: .25em 0 .325em;
              display: block;
@@ -88,8 +89,8 @@
              width: 1000px;
             }
 
-.h3-name { font: 400 1em/1.5 "Neuton";
-           background: #090d00; color: rgba(255,255,255,.25);
+.h2-name { font: "Neuton";
+           font-size: 1em;
            text-align: center;
            margin: 0;
            text-transform: uppercase;
