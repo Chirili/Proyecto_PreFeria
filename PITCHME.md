@@ -16,11 +16,11 @@
 @snapend
 
 ---
-@snap[west span-40]
+@snap[north-west span-40 funcionamiento]
 @box[idea](Funcionamiento#El tacógrafo digital obtiene datos relativos a los tiempos de conducción y descansos del conductor. Esta información es la más importante de todas y constituye el sentido fundamental del tacógrafo.)
 @snapend
 
-@snap[east span-40]
+@snap[south-east span-60]
 @box[idea](Datos#Los eventos recogidos por el tacógrafo incluyen:)
 @ul[funcionamiento_lista](false)
 
@@ -32,6 +32,6 @@
 @ulend
 @snapend
 
-@snap[north-east span-40]
+@snap[north-east span-60]
 @quote[Si quieres ver un modelo ya implantado y en funcionamiento visita: https://tachoexplorer.es/]
 @snapend
