@@ -1,6 +1,6 @@
 
 theme-override : src/css/PITCHME.css
 theme : night
-transition : slide
+transition : concave
 
 code-line-numbers : true
