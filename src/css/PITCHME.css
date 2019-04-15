@@ -171,6 +171,7 @@ li.li-nested-item #text{
 .reveal ul {
     list-style-type: square;
     font-size: 0.6em;
+    text-shadow: 0 0 80px rgba(255,255,255,0.6);
 }
 
 .reveal blockquote {
@@ -183,10 +184,15 @@ li.li-nested-item #text{
     background: rgba(255, 255, 255, 0.05);
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
     font-size: 0.5em;
+    text-shadow: 0 0 80px rgba(255,255,255,0.6);
 }
 
 .funcionamiento {
     position: relative;
     top: -180px;
     left: -200px;
+}
+#boxed-text-box {
+    text-align: center;
+    text-shadow: 0 0 80px rgba(255,255,255,0.6);
 }
