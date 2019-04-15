@@ -1,4 +1,4 @@
----?color=linear-gradient(linear-gradient(to right, #000000, #0e0d0d, #171615, #1e1d1c, #242523);)
+---?color=linear-gradient(linear-gradient(to right, #000000, #0e0d0d, #171615, #1e1d1c, #242523)
 @snap[midpoint h1-heading h3-name]
 # Proyecto Pre-Feria
 ## &mdash; Andrés Carmona Lozano &mdash;
