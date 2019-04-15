@@ -1,5 +1,6 @@
 ---?color=linear-gradient(to right, #000000, #242523)
-@tittle[Introduccion al proyecto pre-feria]
 
-# Proyecto Pre-Feria
-## &mdash; Andrés Carmona Lozano &mdash;
+@snap[midpoint h1-heading h3-name]
+## Proyecto Pre-Feria
+### &mdash; Andrés Carmona Lozano &mdash;
+@snapend
