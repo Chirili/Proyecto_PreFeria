@@ -189,7 +189,7 @@ li.li-nested-item #text{
 
 .funcionamiento {
     position: relative;
-    top: -180px;
+    top: -10px;
     left: -200px;
 }
 #boxed-text-box {
@@ -202,6 +202,16 @@ li.li-nested-item #text{
     left: 480px;
 }
 .entidad_relacion{
-        color:gray;
+        color: #d0d0d0;
         font-size: 0.6em !important;
+        text-shadow: 0 0 80px rgba(255,255,255,0.6);
+        position: relative;
+        bottom: 100px;
+}
+
+/*Felchas css*/
+.aentidad{
+position: relative;
+bottom: 100px;
+text-shadow: 0 0 80px rgba(255,255,255,0.6);
 }
