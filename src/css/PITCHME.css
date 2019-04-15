@@ -79,10 +79,15 @@
 .text-right  { text-align: right; }
 /*H1*/
 
-.h2-heading {font-family: "Oswald", sans-serif;
+.h2-heading {
+             font-family: 'PRIMETIME';
+             font-weight: bold;
+             font-style: oblique;
              color: white;
              font-size: 2em;
              letter-spacing: 0;
+             text-transform: uppercase;
+             text-shadow: -3px 2px 7px #FFFFFF;
              padding: .25em 0 .325em;
              display: block;
              margin: 0 auto;
