@@ -5,6 +5,8 @@
 ## &mdash; Andrés Carmona Lozano &mdash;
 @snapend
 
++++?color=linear-gradient(to right, #000000, #242523)
+
 @snap[midpoint h1-heading h3-name]
 # GitPitch
 ### The Markdown Presentation Service on Git
