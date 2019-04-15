@@ -1,13 +1,5 @@
 ---?color=linear-gradient(to right, #000000, #242523)
+@tittle[Introduccion al proyecto pre-feria]
 
-@snap[midpoint h1-heading h2-name]
 # Proyecto Pre-Feria
 ## &mdash; Andrés Carmona Lozano &mdash;
-@snapend
-
-+++?color=linear-gradient(to right, #000000, #242523)
-
-@snap[midpoint h1-heading h3-name]
-# GitPitch
-### The Markdown Presentation Service on Git
-@snapend
