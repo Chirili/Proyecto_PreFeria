@@ -95,3 +95,9 @@
            text-align: center;
            color: rgba(255, 255, 255, 0.25);
 }
+
+.h3-name { font: "Neuton";
+    font-size: 1em;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.25);
+}
