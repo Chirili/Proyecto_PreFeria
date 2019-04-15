@@ -20,6 +20,7 @@
 .span-95  { width: 95% !important }
 .span-100 { width: 100% !important }
 /*Color text*/
+
 .text-black  { color: #000000 !important; }
 .text-blue   { color: #4487F2 !important; }
 .text-gray   { color: #777777 !important; }
@@ -31,6 +32,7 @@
 .text-yellow { color: #F5DB2E !important; }
 .text-white  { color: #FFFFFF !important; }
 /*Text size*/
+
 .text-01 { font-size: 0.1em !important; }
 .text-02 { font-size: 0.2em !important; }
 .text-03 { font-size: 0.3em !important; }
@@ -62,6 +64,7 @@
 .text-45 { font-size: 4.5em !important; }
 .text-50 { font-size: 5.0em !important; }
 /*Font style*/
+
 .text-bold       { font-weight: bold !important; }
 .text-italic     { font-style: italic !important; }
 .text-italics    { font-style: italic !important; }
@@ -70,11 +73,13 @@
 .text-capitalize { text-transform: capitalize !important; }
 .text-smallcaps  { font-variant: small-caps !important; }
 /*Text align*/
+
 .text-center { text-align: center; }
 .text-left   { text-align: left; }
 .text-right  { text-align: right; }
 /*H1*/
-.h1-heading {font: "Oswald", sans-serif;
+
+.h1-heading {font: 700 4em/1 "Oswald", sans-serif;
              letter-spacing: 0;
              padding: .25em 0 .325em;
              display: block;
@@ -82,3 +87,20 @@
              text-shadow: 0 0 80px rgba(255,255,255,.5);
              width: 1000px;
             }
+
+.h3-name { font: 400 1em/1.5 "Neuton";
+           background: #090d00; color: rgba(255,255,255,.25);
+           text-align: center;
+           margin: 0;
+           text-transform: uppercase;
+	       letter-spacing: .5em;
+	       display: inline-block;
+	       border: 4px double rgba(255,255,255,.25);
+	       border-width: 4px 0;
+	       padding: 1.5em 0em;
+	       position: absolute;
+	       top: 18%;
+	       left: 50%;
+	       width: 40em;
+	       margin: 0 0 0 -20em;
+}

@@ -1,5 +1,5 @@
 ---?color=linear-gradient(to left, #56ccf2, #2f80ed)
-@snap[midpoint h1-heading]
+@snap[midpoint h1-heading h3-name]
 # Proyecto Pre-Feria
 ## Andrés Carmona Lozano
 @snapend
