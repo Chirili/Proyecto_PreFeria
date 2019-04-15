@@ -9,5 +9,6 @@
 
 @snap[west span-40](Idea principal###La idea principal sobre el proyecto de pre-feria es hacer la estructura de una base de datos de un tacografo digital)
 @snapend
+
 @snap[east span-40](¿Y que es un tacografo digital?### Un tacografo digital es un aparato electrónico que se encarga de registrar eventos en la conducción de vehiculos, su precursor fué el tacografo analógico, el cuál esta previsto que desaparezca completamente por el digital.)
 @snapend
