@@ -32,12 +32,9 @@
 @ulend
 @snapend
 
-@snap[north-east span-60]
-@quote[Si quieres ver un modelo ya implantado y en funcionamiento visita: https://tachoexplorer.es/]
-@snapend
-
 @css[entidad_relacion](Modelo Entidad-Relacion)
 
-@fa[arrow-down aentidad]
+@fa[arrow-down]
 
 +++
+
