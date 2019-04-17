@@ -34,7 +34,7 @@
 
 @css[entidad_relacion](Modelo Entidad-Relacion)
 
-@fa[arrow-down flecha]
+@fa[arrow-down flecha #prueba]
 
 +++
 
