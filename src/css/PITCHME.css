@@ -215,3 +215,12 @@ li.li-nested-item #text{
     margin-left: 12%;
     text-shadow: 0 0 80px rgba(255,255,255,0.6);
 }
+
+.fa-arrow-down:before {
+    content: "\f063";
+    margin-left: 60%;
+}
+
+i.fa.fa-arrow-down.prueba {
+    margin-left: 100%;
+}
