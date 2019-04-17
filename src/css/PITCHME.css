@@ -216,10 +216,6 @@ li.li-nested-item #text{
     text-shadow: 0 0 80px rgba(255,255,255,0.6);
 }
 
-.reveal p.flecha {
-    margin-top: -9%;
-}
-
-reveal p #prueba {
+p.prueba {
     margin-top: -9%;
 }
