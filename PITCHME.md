@@ -47,9 +47,9 @@
 
 ![Modelo-Entidad_Relacion](src/images/modelo_entidad_relacion.jpg)
 
-@snap[east]
+@snap[east relacional_1]
 @css[relacional](Modelo Relacional)
 @snapend
-@snap[east]
+@snap[east relacional_2]
 @fa[arrow-right]
 @snapend

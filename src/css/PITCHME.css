@@ -272,12 +272,25 @@ img:hover {
         bottom: 100px;
 }
 
+/*Modelo relacional*/
+
+.east.relacional_1 {
+    left: 110%;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    top: 70%;
+}
+.east.relacional_2 {
+    left: 120%;
+}
 /*Felchas css*/
 .aentidad {
     margin-top: 10%;
     margin-left: 12%;
     text-shadow: 0 0 80px rgba(255,255,255,0.6);
 }
+
+
 
 .fa-arrow-down:before {
     content: "\f063";
