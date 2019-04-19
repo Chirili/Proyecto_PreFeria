@@ -54,8 +54,6 @@
 @fa[arrow-right]
 @snapend
 
-@snap[west sidebar span-30]
-
-@quote[Descripción del problema: ]
-@css[enunciado](Descripción del @gitlink[problema](src/statements/problema.md).)
+@snap[west sidebar span-30 problema]
+@css[enunciado](Descripción del @gitlink[problema](src/statements/problema.md) .)
 @snapend

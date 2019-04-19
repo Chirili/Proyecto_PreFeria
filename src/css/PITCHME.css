@@ -272,16 +272,18 @@ img:hover {
         bottom: 100px;
 }
 
-.enunciado {
-    right: 110%;
-    padding: 5px;
-    font-style: italic;
-    font-size: 0.55em;
-    position: fixed;
-    bottom: 1%;
-    top: 38%;
+.problema {
+    font-size: 0.6em;
 }
-
+.enunciado {
+    position: fixed;
+    font-style: italic;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    text-shadow: 0 0 80px rgba(255,255,255,0.6);
+    right: 95%;
+}
 
 /*Modelo relacional*/
 
