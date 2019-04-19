@@ -97,12 +97,20 @@
   word-wrap: break-word;
   }
 
-.reveal h2 {
-    font-size: 2em;
+  .reveal h2 {
+    font-size: 2.5em;
     font-weight: normal;
+    font-family: "Oswald", sans-serif;
     letter-spacing: -0.03em;
     text-transform: none;
     word-wrap: break-word;
+    text-shadow: 0 0 80px rgba(255,255,255,.5);
+    margin: 0 0 5px 0;
+}
+.reveal h3 {
+    font-size: 1.55em;
+    font-family: "Oswald", sans-serif;
+    text-shadow: 0 0 80px rgba(255,255,255,.5);
 }
 
 .midpoint {
@@ -161,18 +169,14 @@
 
 
 
-.north.entidad{
-    font: 700 0.2em/1 "Oswald", sans-serif;
-    letter-spacing: 0;
-    padding: .25em 0 .325em;
-    display: block;
+.north.entidad {
+    font: 700 0.5em/1 "Oswald", sans-serif;
     border-top: 4px double rgba(255,255,255,.25);
     border-bottom: 4px double rgba(255,255,255,.25);
     text-transform: uppercase;
     margin: 0 auto;
     text-shadow: 0 0 80px rgba(255,255,255,.5);
-    width: 1000px;
-    left: 30%;
+    top: 5px;
 }
 
 .idea{
@@ -253,6 +257,11 @@ li.li-nested-item #text{
     bottom: 160px;
     left: 480px;
 }
+
+img:hover {
+    transform: scale(1.4);
+}
+
 .entidad_relacion{
         color: #d0d0d0;
         font-size: 0.6em !important;
