@@ -56,6 +56,7 @@
 
 @snap[west sidebar span-30 problema]
 
-@css[enunciado]([Descripción del problema](https://github.com/Chirili/Proyecto_PreFeria/blob/master/src/statements/problema.md) )
+@css[enunciado]([Descripción del problema](https://github.com/Chirili/Proyecto_PreFeria/blob/master/src/statements/problema.md)
+<br>)
 
 @snapend
