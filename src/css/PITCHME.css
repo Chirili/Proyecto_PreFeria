@@ -96,7 +96,7 @@
     margin: 0;
 }
 
-.reveal h2 {
+.midpoint.h2-heading {
     font: 700 2em/1 "Oswald", sans-serif;
     letter-spacing: 0;
     padding: .25em 0 .325em;
@@ -124,6 +124,7 @@
     margin: 0 0 0 -20em;
 }
 .north.entidad{
+    font: 700 2em/1 "Oswald", sans-serif;
     letter-spacing: 0;
     padding: .25em 0 .325em;
     display: block;
