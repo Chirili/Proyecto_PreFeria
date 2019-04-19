@@ -53,3 +53,7 @@
 @snap[east relacional_2]
 @fa[arrow-right]
 @snapend
+
+@snap[north-west snap-30]
+@quote[@gitlink[Descripción](src/statements/problema.md) del problema]
+@snapend
