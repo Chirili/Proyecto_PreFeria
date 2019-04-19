@@ -8,11 +8,11 @@
 ---?color=linear-gradient(to right, #242523, #9F9F9F)
 
 @snap[west span-40]
-@box[idea](Idea principal#La idea principal sobre el proyecto de pre-feria es hacer la estructura de una base de datos de un tacografo digital)
+@box[idea](Idea principal#La idea principal sobre el proyecto de pre-feria es hacer la estructura de una base de datos de un tacógrafo digital)
 @snapend
 
 @snap[east span-40]
-@box[idea](¿Y que es un tacografo digital?# Un tacografo digital es un aparato electrónico que se encarga de registrar eventos en la conducción de vehiculos, su precursor fué el tacografo analógico, el cuál esta previsto que desaparezca completamente por el digital.)
+@box[idea](¿Y que es un tacógrafo digital?# Un tacógrafo digital es un aparato electrónico que se encarga de registrar eventos en la conducción de vehiculos, su precursor fué el tacógrafo analógico, el cuál esta previsto que desaparezca completamente por el digital.)
 @snapend
 
 ---
@@ -59,3 +59,13 @@
 [Descripción del problema](https://github.com/Chirili/Proyecto_PreFeria/blob/master/src/statements/problema.md)
 
 @snapend
+
+---
+
+@snap[north entidad span-95]
+## Modelo Relacional
+@snapend
+
+![Modelo Relacional](src/images/modelo_relacional.jpg)
+
+
