@@ -123,6 +123,16 @@
     width: 40em;
     margin: 0 0 0 -20em;
 }
+.north.entidad{
+    letter-spacing: 0;
+    padding: .25em 0 .325em;
+    display: block;
+    border-bottom: 4px double rgba(255,255,255,.25);
+    text-transform: uppercase;
+    margin: 0 auto;
+    text-shadow: 0 0 80px rgba(255,255,255,.5);
+    width: 1000px;
+}
 
 .idea{
     -moz-border-radius-topright: 20px;
