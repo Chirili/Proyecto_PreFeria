@@ -65,12 +65,12 @@
 @snap[north entidad span-95]
 ## Modelo Relacional
 @snapend
-
+@snap[midpoint imgrelacional]
 ![Modelo Relacional](src/images/modelo_relacional.jpg)
-
-@snap[south-west]
+@snapend
+@snap[south-west relacional]
 @css[entidad_relacion](Create table)
 @snapend
-@snap[south-west]
+@snap[south-west relacional]
 @fa[arrow-down prueba]
 @snapend
