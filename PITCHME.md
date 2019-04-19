@@ -54,7 +54,7 @@
 @fa[arrow-right]
 @snapend
 
-@snap[west-sidebar snap-30]
+@snap[west sidebar span-30]
 @quote[Descripción del problema: ]
 [enunciado](src/statements/problema.md)
 @snapend
