@@ -98,12 +98,19 @@
   }
 
 .reveal h2 {
-    font-size: 3.0em;
+    font-size: 2em;
+    font-weight: normal;
+    letter-spacing: -0.03em;
+    text-transform: none;
+    word-wrap: break-word;
 }
 
 .midpoint {
+    position: absolute;
     top: 49%;
     left: 50%;
+    transform: translate(0%, -50%);
+    position: fixed;
     text-align: center;
 }
 
