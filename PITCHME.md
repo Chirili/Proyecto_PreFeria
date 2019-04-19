@@ -41,7 +41,7 @@
 
 +++
 
-@snap[north entidad]
+@snap[north entidad span-40]
 ## Modelo Entidad-Relación
 @snapend
 

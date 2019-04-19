@@ -80,6 +80,33 @@
 .text-center { text-align: center; }
 .text-left   { text-align: left; }
 .text-right  { text-align: right; }
+
+/*HEADERS*/
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  margin: 0 0 20px 0;
+  color: #eee;
+  font-weight: normal;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: none;
+  word-wrap: break-word;
+  }
+
+.reveal h2 {
+    font-size: 3.0em;
+}
+
+.midpoint {
+    top: 49%;
+    left: 50%;
+    text-align: center;
+}
+
 /*H1*/
 
 .reveal .slide-background-content {
@@ -100,6 +127,7 @@
     font: 700 2em/1 "Oswald", sans-serif;
     letter-spacing: 0;
     padding: .25em 0 .325em;
+    font-style: normal;
     display: block;
     border-top: 4px double rgba(255,255,255,.25);
     text-transform: uppercase;
@@ -110,28 +138,24 @@
 
 
 .midpoint.h3-name {
-    font-size: 0.55em;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-style: oblique;
-    display: inline-block;
-    border-bottom: 4px double rgba(255,255,255,.25);
-    border-width: 4px 0;
-    text-shadow: 0 0 80px rgba(255,255,255,.5);
-    padding: 1.5em 0em;
-    position: absolute;
-    width: 40em;
-    margin: 0 0 0 -20em;
+        text-transform: uppercase;
+        font: 700 0.7em/1 "Oswald", sans-serif;
+        letter-spacing: 0.1em;
+        font-style: oblique;
+        display: inline-block;
+        border-bottom: 4px double rgba(255,255,255,.25);
+        border-width: 4px 0;
+        text-shadow: 0 0 80px rgba(255,255,255,.5);
+        padding: 1.5em 0em;
+        position: absolute;
+        width: 40em;
+        margin: 0 0 0 -20em;
 }
-/*
-.reveal h2 {
-    font-size: 1em;
-    font-weight: normal;
-    letter-spacing: -0.03em;
-}
-*/
+
+
+
 .north.entidad{
-    font: 700 1em/1 "Oswald", sans-serif;
+    font: 700 0.2em/1 "Oswald", sans-serif;
     letter-spacing: 0;
     padding: .25em 0 .325em;
     display: block;
@@ -140,7 +164,7 @@
     text-transform: uppercase;
     margin: 0 auto;
     text-shadow: 0 0 80px rgba(255,255,255,.5);
-    width: 1000px;
+    left: 30%;
 }
 
 .idea{
