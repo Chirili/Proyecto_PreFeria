@@ -272,6 +272,23 @@ img:hover {
         bottom: 100px;
 }
 
+.enunciado {
+    right: 110%;
+    padding: 5px;
+    font-style: italic;
+    font-size: 0.55em;
+    position: fixed;
+    bottom: 1%;
+    top: 38%;
+}
+
+/*QUOTES*/
+
+blockquote.quote-text {
+    right: 100%;
+    margin: 0 0 0 0;
+}
+
 /*Modelo relacional*/
 
 .east.relacional_1 {
