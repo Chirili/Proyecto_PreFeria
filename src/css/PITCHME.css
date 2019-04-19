@@ -293,6 +293,18 @@ img:hover {
     white-space: nowrap;
     top: 70%;
 }
+
+.reveal a {
+    position: fixed;
+    right: 100%;
+    width: 90%;
+    font: 700 0.5em/1 "Oswald", sans-serif;
+    border-top: 4px double rgba(255,255,255,.25);
+    text-align: center;
+    border: 4px double rgba(255,255,255,.25);
+    text-shadow: 0 0 80px rgba(255,255,255,.5);
+}
+
 .east.relacional_2 {
     left: 120%;
 }
