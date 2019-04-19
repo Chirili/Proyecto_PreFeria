@@ -55,5 +55,6 @@
 @snapend
 
 @snap[north-west snap-30]
-@quote[Descripciónd el problema](src/statements/problema.md)
+@quote[Descripción del problema: ]
+[enunciado](src/statements/problema.md)
 @snapend
