@@ -96,17 +96,18 @@
     margin: 0;
 }
 
-.reveal h2.entidad {
+.reveal h2 {
     font: 700 2em/1 "Oswald", sans-serif;
     letter-spacing: 0;
     padding: .25em 0 .325em;
     display: block;
-    border-bottom: 4px double rgba(255,255,255,.25);
+    border-top: 4px double rgba(255,255,255,.25);
     text-transform: uppercase;
     margin: 0 auto;
     text-shadow: 0 0 80px rgba(255,255,255,.5);
     width: 1000px;
 }
+
 
 .reveal h3 {
     font-size: 0.55em;
