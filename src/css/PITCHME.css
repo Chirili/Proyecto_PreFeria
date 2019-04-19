@@ -295,7 +295,7 @@ img:hover {
 
 .fa-arrow-down:before {
     content: "\f063";
-    margin-left: 60%;
+    margin-left: 100%;
 }
 
 i.fa.fa-arrow-down.prueba {
