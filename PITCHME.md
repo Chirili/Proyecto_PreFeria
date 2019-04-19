@@ -45,4 +45,4 @@
 ## Modelo Entidad-Relación
 @snapend
 
-![Modelo-Entidad_Relacion](src/images/modelo_entidad_relacion.jpg)
+![Modelo-Entidad_Relacion entidad](src/images/modelo_entidad_relacion.jpg)

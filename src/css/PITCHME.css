@@ -228,6 +228,10 @@ li.li-nested-item #text{
         bottom: 100px;
 }
 
+.entidad{
+    transform: scale(2.0);
+}
+
 /*Felchas css*/
 .aentidad {
     margin-top: 10%;
