@@ -4,15 +4,16 @@
 
 Se necesita almacenar en la base de datos, los datos relacionados con un tacógrafo digital:
 
-   - Se almacenará los datos de la compañia, el conductor, el vehiculo y el vehiculo usado, actividad, lugares y tarjeta.
+- Se almacenará los datos de la compañia, el conductor, el vehiculo y el vehiculo usado, actividad, lugares y tarjeta.
 
-   - De la compañía se almacenará **(el codigo, nombre de la compañia y el codigo postal).**
+    - De la compañía se almacenará **(el codigo, nombre de la compañia y el codigo postal).**
 
         > Hay que tener en cuenta que una compañia puede tener muchos conductores y un conductor puede trabajar con distintas compañias pero nunca con dos a la vez.
 
-   - Del conductor interesa saber su **(DNI, nombre, primer y segundo apellido, el idioma preferido y la fecha de alta en la empresa).**
+    - Del conductor interesa saber su **(DNI, nombre, primer y segundo apellido, el idioma preferido y la fecha de alta en la empresa).**
 
-   - De la actividad se almacenará  **(el ID, el estado, el régimen, conducto y el tiempo).**
+    - De la actividad se almacenará  **(el ID, el estado, el régimen, conducto y el tiempo).**
+    
         > Teniendo en cuenta que la actividad la realiza un conductor cada ID de actividad tiene que tener asociado un DNI de un conductor que esta realizando esa actividad asi como el codigo de compañia a la que pertenece dicho conductor en ese determinado momento
 
     - Del vehiculo interesa saber **(el número de registro y la nación de registro de dicho vehiculo, asi como el código de la compañía a la que pertenece).**
