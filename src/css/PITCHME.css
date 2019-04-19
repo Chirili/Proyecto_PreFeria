@@ -176,7 +176,8 @@
     text-transform: uppercase;
     margin: 0 auto;
     text-shadow: 0 0 80px rgba(255,255,255,.5);
-    top: 5px;
+    top: 20px;
+    right: 20%;
 }
 
 .idea{
@@ -268,10 +269,6 @@ img:hover {
         text-shadow: 0 0 80px rgba(255,255,255,0.6);
         position: relative;
         bottom: 100px;
-}
-
-.entidad{
-    transform: scale(2.0);
 }
 
 /*Felchas css*/
