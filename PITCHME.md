@@ -39,9 +39,10 @@
 @fa[arrow-down prueba]
 @snapend
 
-+++?image=src/images/modelo_entidad_relacion.jpg&position=mid&size=55% 100%
++++
 
 @snap[north entidad]
 ## Modelo Entidad-Relación
 @snapend
 
+![Modelo-Entidad_Relacion](src/images/modelo_entidad_relacion.jpg)
