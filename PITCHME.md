@@ -68,4 +68,9 @@
 
 ![Modelo Relacional](src/images/modelo_relacional.jpg)
 
-
+@snap[south-west]
+@css[entidad_relacion](Create table)
+@snapend
+@snap[south-west]
+@fa[arrow-down prueba]
+@snapend
