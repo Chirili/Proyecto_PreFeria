@@ -259,20 +259,6 @@ li.li-nested-item #text{
     left: 480px;
 }
 
-.lightbox-target:target {
-    opacity: 1;
-    top: 0;
-    bottom: 0;
-    }
-    
-    .lightbox-target:target img {
-    max-height: 100%;
-    max-width: 100%;
-    }
-    
-    .lightbox-target:target a.lightbox-close {
-    top: 0px;
-    }
 
 img:hover {
     transform: scale(1.4);
@@ -295,9 +281,9 @@ img:hover {
 
 .fa-arrow-down:before {
     content: "\f063";
-    margin-left: 90%;
+    margin-left: 80%;
 }
 
 i.fa.fa-arrow-down.prueba {
-    margin-left: 100%;
+    margin-left: 0%;
 }

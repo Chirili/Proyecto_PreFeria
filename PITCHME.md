@@ -46,3 +46,10 @@
 @snapend
 
 ![Modelo-Entidad_Relacion](src/images/modelo_entidad_relacion.jpg)
+
+@snap[east]
+@css[relacional](Modelo Relacional)
+@snapend
+@snap[east]
+@fa[arrow-right]
+@snapend
