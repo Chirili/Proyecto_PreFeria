@@ -123,12 +123,13 @@
     width: 40em;
     margin: 0 0 0 -20em;
 }
+/*
 .reveal h2 {
     font-size: 1em;
     font-weight: normal;
     letter-spacing: -0.03em;
 }
-
+*/
 .north.entidad{
     font: 700 1em/1 "Oswald", sans-serif;
     letter-spacing: 0;
