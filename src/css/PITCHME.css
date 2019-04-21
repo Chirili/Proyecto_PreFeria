@@ -308,8 +308,7 @@ img:hover {
 }
 
 /*Diapositiva 4*/
-.problema {
-    font-size: 30%;
+.west.sidebar.span-30.problema {
     left: -20%;
     position: fixed;
     right: 100%;
