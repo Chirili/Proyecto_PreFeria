@@ -272,9 +272,10 @@ img:hover {
         bottom: 100px;
 }
 
+
 /*Imagen modelo entidad relacion*/
-.midpoint.entidadimg {
-    transform: translate(-50%, -20%);
+.entidadimg {
+    transform: translate(-50%, -40%);
 }
 /*Boton descripcion del problema*/
 
@@ -306,7 +307,10 @@ img:hover {
     top: 70%;
 }
 
-.reveal a {
+/*Diapositiva 4*/
+.problema {
+    font-size: 30%;
+    left: -20%;
     position: fixed;
     right: 100%;
     width: 90%;
@@ -321,20 +325,26 @@ img:hover {
 .east.relacional_2 {
     left: 120%;
 }
-/*Felchas css*/
+
+/*Flechas css*/
 .aentidad {
     margin-top: 10%;
     margin-left: 12%;
     text-shadow: 0 0 80px rgba(255,255,255,0.6);
 }
 
-
-
-.fa-arrow-down:before {
-    content: "\f063";
-    margin-left: 80%;
+/*Diapositiva 3*/
+.d3-flecha {
+    left: 12%;
+    bottom: 10%;
 }
 
-i.fa.fa-arrow-down.prueba {
-    margin-left: 0%;
+/*Diapositiva 4*/
+
+.d5-text {
+    top: 95%;
+}
+
+.d5-flecha {
+    top: 89%;
 }

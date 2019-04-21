@@ -35,8 +35,8 @@
 @snap[south-west]
 @css[entidad_relacion](Modelo Entidad-Relacion)
 @snapend
-@snap[south-west]
-@fa[arrow-down prueba]
+@snap[south-west d3-flecha]
+@fa[arrow-down]
 @snapend
 
 +++
@@ -72,9 +72,9 @@
 ![Modelo Relacional](src/images/modelo_relacional.jpg)
 
 
-@snap[south-west relacional]
+@snap[south-west d5-text]
 @css[entidad_relacion](Create table)
 @snapend
-@snap[south-west relacional]
+@snap[south-west d5-flecha]
 @fa[arrow-down prueba]
 @snapend
