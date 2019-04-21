@@ -272,8 +272,15 @@ img:hover {
         bottom: 100px;
 }
 
+/*Imagen modelo entidad relacion*/
+.midpoint.entidadimg {
+    transform: translate(-50%, -20%);
+}
+/*Boton descripcion del problema*/
+
 .problema {
     font-size: 0.6em;
+    left: 5%;
 }
 
 .imgrelacional{

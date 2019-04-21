@@ -45,7 +45,7 @@
 ## Modelo Entidad-Relación
 @snapend
 
-@snap[midpoint]
+@snap[midpoint entidadimg]
 ![Modelo-Entidad_Relacion](src/images/modelo_entidad_relacion.jpg)
 @snapend
 
