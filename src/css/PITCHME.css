@@ -211,16 +211,7 @@
     text-align: left;
     text-shadow: 0 0 80px rgba(255,255,255,0.6);
 }
-.funcionamiento_lista{
-            content: "\2713 ";
-			font-size: 1.2em;
-			margin-left: -40px;
-			margin-right: 40px;
-			padding: .2em .45em .2em .45em;
-			position: relative;
-			color: white;
-			background-color: lighten(#859a31, 0%);
-}
+
 
 li.li-nested-item #text{
         font-size: 0.6em;
@@ -244,11 +235,7 @@ li.li-nested-item #text{
     text-shadow: 0 0 80px rgba(255,255,255,0.6);
 }
 
-.funcionamiento {
-    position: relative;
-    top: -10px;
-    left: -200px;
-}
+
 #boxed-text-box {
     text-align: center;
     text-shadow: 0 0 80px rgba(255,255,255,0.6);
@@ -284,8 +271,6 @@ img:hover {
     left: 5%;
 }
 
-.imgrelacional{
-    
 }
 
 .enunciado {
@@ -298,13 +283,23 @@ img:hover {
     right: 95%;
 }
 
-/*Modelo relacional*/
 
-.east.relacional_1 {
-    left: 110%;
-    transform: rotate(-90deg);
-    white-space: nowrap;
-    top: 70%;
+/*Diapositiva 3*/
+.funcionamiento {
+    position: relative;
+    top: -10px;
+    left: 0%;
+}
+
+.funcionamiento_lista{
+    content: "\2713 ";
+    font-size: 1.2em;
+    margin-left: -40px;
+    margin-right: 40px;
+    padding: .2em .45em .2em .45em;
+    position: relative;
+    color: white;
+    background-color: lighten(#859a31, 0%);
 }
 
 /*Diapositiva 4*/
@@ -321,8 +316,15 @@ img:hover {
     padding: 5px;
 }
 
+.east.relacional_1 {
+    left: 101%;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    top: 70%;
+}
+
 .east.relacional_2 {
-    left: 120%;
+    left: 106%;
 }
 
 /*Flechas css*/
@@ -338,12 +340,14 @@ img:hover {
     bottom: 10%;
 }
 
-/*Diapositiva 4*/
+/*Diapositiva 5*/
 
 .d5-text {
     top: 95%;
+    left: 40%;
 }
 
 .d5-flecha {
     top: 89%;
+    left: 46%;
 }
