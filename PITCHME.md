@@ -56,10 +56,9 @@
 @fa[arrow-right]
 @snapend
 
-@snap[west sidebar span-30 problema]
-
-
 <a href="https://github.com/Chirili/Proyecto_PreFeria/blob/master/src/statements/problema.md">Descripción del problema</a>
+
+@snap[west sidebar span-30 problema]
 
 [Descripción del problema](https://github.com/Chirili/Proyecto_PreFeria/blob/master/src/statements/problema.md)
 
