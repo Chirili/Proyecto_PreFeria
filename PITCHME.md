@@ -59,6 +59,12 @@
 <p class="problema">
 <a href="https://github.com/Chirili/Proyecto_PreFeria/blob/master/src/statements/problema.md">Descripción del problema <i class="fa fa-external-link" aria-hidden="true"> </i></a>
 <p>
+
+@snap[north-west problema]
+
+<a href="https://github.com/Chirili/Proyecto_PreFeria/blob/master/src/statements/problema.md">Descripción del problema <i class="fa fa-external-link" aria-hidden="true"> </i></a>
+
+@snapend
 <!--
 @snap[west sidebar span-30 problema]
 [Descripción del problema](https://github.com/Chirili/Proyecto_PreFeria/blob/master/src/statements/problema.md)
