@@ -57,11 +57,12 @@
 @snapend
 
 
-<a href="https://github.com/Chirili/Proyecto_PreFeria/blob/master/src/statements/problema.md" class="problema">GitPitch Quickstart Template</a>
+@gitlink[TEXT](https://github.com/Chirili/Proyecto_PreFeria/blob/master/src/statements/problema.md)
 
-<a href="https://github.com/Chirili/Proyecto_PreFeria/blob/master/src/statements/problema.md">GitPitch Quickstart Template</a>
 
-<a href="https://gitpitch.com/gitpitch/the-template">GitPitch Quickstart Template</a>
+@snap[west-sidebar problema]
+@gitlink[TEXT](src/statements/problema.md)
+@snapend
 ---
 
 @snap[north entidad span-95]
