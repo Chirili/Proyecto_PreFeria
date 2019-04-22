@@ -56,14 +56,13 @@
 @fa[arrow-right]
 @snapend
 
-<a href="https://github.com/Chirili/Proyecto_PreFeria/blob/master/src/statements/problema.md">Descripción del problema</a>
+<a href="https://github.com/Chirili/Proyecto_PreFeria/blob/master/src/statements/problema.md" target="_self" class="problema">Descripción del problema</a>
 
+<!--
 @snap[west sidebar span-30 problema]
-
 [Descripción del problema](https://github.com/Chirili/Proyecto_PreFeria/blob/master/src/statements/problema.md)
-
 @snapend
-
+-->
 ---
 
 @snap[north entidad span-95]
