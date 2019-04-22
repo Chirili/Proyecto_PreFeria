@@ -328,7 +328,7 @@ p.problema {
     text-shadow: 0 0 80px rgba(255,255,255,.5);
     padding: 5px;
 }
-.problema {
+a.problema {
     left: -13%;
     position: fixed;
     right: 100%;
