@@ -56,7 +56,7 @@
 @fa[arrow-right]
 @snapend
 
-<a href="https://gitpitch.com/gitpitch/the-template">Descripción del problema <i class="fa fa-external-link" aria-hidden="true"> </i></a>
+<a href="https://github.com/Chirili/Proyecto_PreFeria/blob/master/src/statements/problema.md" class="problema">Descripción del problema <i class="fa fa-external-link" aria-hidden="true"> </i></a>
 
 <!--
 @snap[west sidebar span-30 problema]
