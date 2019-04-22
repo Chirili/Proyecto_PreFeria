@@ -58,6 +58,9 @@
 
 @snap[west sidebar span-30 problema]
 
+
+<a href="https://github.com/Chirili/Proyecto_PreFeria/blob/master/src/statements/problema.md">Descripción del problema</a>
+
 [Descripción del problema](https://github.com/Chirili/Proyecto_PreFeria/blob/master/src/statements/problema.md)
 
 @snapend
@@ -78,3 +81,7 @@
 @snap[south-west d5-flecha]
 @fa[arrow-down prueba]
 @snapend
+
+
+---
+
