@@ -57,11 +57,10 @@
 @snapend
 
 <p>
-<a href="https://github.com/Chirili/Proyecto_PreFeria/blob/master/src/statements/problema.md">Descripcion del problema <i class="fa fa-external-link" aria-hidden="true"> </i></a>
-<p>
+<a href="https://github.com/Chirili/Proyecto_PreFeria/blob/master/src/statements/problema.md">Descripcion del problema</a></p>
 
 @snap[north-west problema]
-<a href="https://github.com/Chirili/Proyecto_PreFeria/blob/master/src/statements/problema.md">Descripción del problema <i class="fa fa-external-link" aria-hidden="true"> </i></a>
+<a href="https://github.com/Chirili/Proyecto_PreFeria/blob/master/src/statements/problema.md">Descripción del problema</a>
 @snapend
 ---
 
