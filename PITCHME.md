@@ -60,8 +60,10 @@
 <a href="https://github.com/Chirili/Proyecto_PreFeria/blob/master/src/statements/problema.md">Descripcion del problema</a></p>
 
 @snap[north-west problema]
-<a href="https://github.com/Chirili/Proyecto_PreFeria/blob/master/src/statements/problema.md">Descripción del problema</a>
+<a href="https://github.com/Chirili/Proyecto_PreFeria/blob/master/src/statements/problema.md" target="self">Descripción del problema</a>
 @snapend
+
+<a href="https://gitpitch.com/gitpitch/the-template">GitPitch Quickstart Template</a>
 ---
 
 @snap[north entidad span-95]
