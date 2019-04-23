@@ -81,5 +81,5 @@
 @snapend
 
 
----
+---?terminal=src/videos/test.json&font=small&title=Prueba Grabación
 
