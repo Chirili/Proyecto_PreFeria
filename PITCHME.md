@@ -83,10 +83,12 @@
 
 ---
 
-<a href="https://asciinema.org/a/14?autoplay=1"><img src="https://asciinema.org/a/14.png" width="836"/></a>
-
-<p>This is some text.</p>
-<script src="https://asciinema.org/a/14.js" id="asciicast-14" async></script>
-<p>This is some other text.</p>
-
-<asciinema-player src="https://github.com/Chirili/Proyecto_PreFeria/blob/master/src/videos/test.json"></asciinema-player>
+@snap[north span-40]
+### Creación de las tablas y programas usados
+@snapend
+@snap[west span-40]
+@box[windows](Windows#Principalmente el proyecto se ha realizado en windows con Oracle como gestor de base de datos y SQLDeveloper como entorno de desarrollo)
+@snapend
+@snap[east span-40]
+@box[linux](Linux#La parte secundaria y para terminar de adornar el proyecto he utilizado ubuntu 19.04 como sistema operativo y oracle como gesto de base de datos, SQLPlus como conector hacia la base de datos y Asciinema, el cual es un programa que permite grabar terminales y despues mediante un video mostrarla y poder copiar el contenido de la misma mientras se va escribiendo)
+@snapend

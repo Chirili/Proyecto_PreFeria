@@ -376,3 +376,11 @@ a.problema {
     top: 89%;
     left: 46%;
 }
+
+/*Diapositiva 6*/
+.windows {
+    background-image: url(https://akket.com/wp-content/uploads/2018/01/Microsoft-Windows-10-Polaris-6.jpg)
+}
+.linux {
+    background-image: url(https://www.muyseguridad.net/wp-content/uploads/2017/12/Ubuntu.jpg)
+}
