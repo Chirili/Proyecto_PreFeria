@@ -56,12 +56,8 @@
 @fa[arrow-right]
 @snapend
 
-
-@gitlink[TEXT](https://github.com/Chirili/Proyecto_PreFeria/blob/master/src/statements/problema.md)
-
-
 @snap[west-sidebar problema]
-@gitlink[TEXT](src/statements/problema.md)
+@gitlink[Descripción del problema](src/statements/problema.md)
 @snapend
 ---
 
@@ -74,7 +70,7 @@
 
 
 @snap[south-west d5-text]
-@css[entidad_relacion](Create table)
+@css[entidad_relacion](Creación de las tablas)
 @snapend
 @snap[south-west d5-flecha]
 @fa[arrow-down prueba]

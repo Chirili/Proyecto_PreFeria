@@ -111,6 +111,7 @@
     font-size: 1.55em;
     font-family: "Oswald", sans-serif;
     text-shadow: 0 0 80px rgba(255,255,255,.5);
+    margin: 0 0 5px 0;
 }
 
 .midpoint {
@@ -303,11 +304,10 @@ img:hover {
 }
 
 /*Diapositiva 4*/
-.west.sidebar.span-30.problema {
-    left: -13%;
+.west-sidebar.problema {
+    left: -8%;
     position: fixed;
-    right: 100%;
-    width: 90%;
+    width: 25%;
     font: 700 0.5em/1 "Oswald", sans-serif;
     border-top: 4px double rgba(255,255,255,.25);
     text-align: center;
@@ -316,30 +316,6 @@ img:hover {
     padding: 5px;
 }
 
-p.problema {
-    left: -13%;
-    position: fixed;
-    right: 100%;
-    width: 30%;
-    font: 700 0.5em/1 "Oswald", sans-serif;
-    border-top: 4px double rgba(255,255,255,.25);
-    text-align: center;
-    border: 4px double rgba(255,255,255,.25);
-    text-shadow: 0 0 80px rgba(255,255,255,.5);
-    padding: 5px;
-}
-a.problema {
-    left: -13%;
-    position: fixed;
-    right: 100%;
-    width: 30%;
-    font: 700 0.5em/1 "Oswald", sans-serif;
-    border-top: 4px double rgba(255,255,255,.25);
-    text-align: center;
-    border: 4px double rgba(255,255,255,.25);
-    text-shadow: 0 0 80px rgba(255,255,255,.5);
-    padding: 5px;
-}
 
 .east.relacional_1 {
     left: 101%;
@@ -378,9 +354,63 @@ a.problema {
 }
 
 /*Diapositiva 6*/
-.windows {
-    background-image: url(https://akket.com/wp-content/uploads/2018/01/Microsoft-Windows-10-Polaris-6.jpg)
+
+.north.creacion {
+    font: 700 0.5em/1 "Oswald", sans-serif;
+    border-top: 4px double rgba(255,255,255,.25);
+    border-bottom: 4px double rgba(255,255,255,.25);
+    text-transform: uppercase;
+    margin: 0 auto;
+    text-shadow: 0 0 80px rgba(255,255,255,.5);
+    top: 20px;
+    right: 20%;
 }
+
+.windows {
+    background-image: url(https://akket.com/wp-content/uploads/2018/01/Microsoft-Windows-10-Polaris-6.jpg);
+    background-size: cover;
+    font-size: 0,6em;
+}
+
 .linux {
-    background-image: url(https://www.muyseguridad.net/wp-content/uploads/2017/12/Ubuntu.jpg)
+    background-image: url(https://www.muyseguridad.net/wp-content/uploads/2017/12/Ubuntu.jpg);
+    background-size: contain;
+}
+
+.windows #boxed-text {
+    font-size: 0.6em;
+    margin: 0;
+    padding: 0.5em;
+    color: #090D00;
+    text-align: left;
+    text-shadow: 0 0 80px rgba(255,255,255,0.6);
+}
+
+.windows #boxed-text-title-box {
+    font-size: 1em;
+    text-transform: uppercase;
+    background-color: rgba(0,0,0,0);
+}
+
+.west.windowsbox.span-45 {
+    left: -14%;
+}
+
+.east.linuxbox.span-55 {
+    right: -14%;
+}
+
+.linux #boxed-text-title-box {
+    font-size: 1em;
+    text-transform: uppercase;
+    background-color: rgba(0,0,0,0);
+}
+
+.linux #boxed-text {
+    font-size: 0.6em;
+    margin: 0;
+    padding: 0.5em;
+    text-align: left;
+    color: #090D00;
+    text-shadow: 0 0 80px rgba(255,255,255,0.6);
 }
