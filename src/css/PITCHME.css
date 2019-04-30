@@ -1,0 +1,416 @@
+/*Fonts import*/
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Neuton');
+
+.span-5   { width:  5% !important }
+.span-10  { width: 10% !important }
+.span-15  { width: 15% !important }
+.span-20  { width: 20% !important }
+.span-25  { width: 25% !important }
+.span-30  { width: 30% !important }
+.span-35  { width: 35% !important }
+.span-40  { width: 40% !important }
+.span-45  { width: 45% !important }
+.span-50  { width: 50% !important }
+.span-55  { width: 55% !important }
+.span-60  { width: 60% !important }
+.span-65  { width: 65% !important }
+.span-70  { width: 70% !important }
+.span-75  { width: 75% !important }
+.span-80  { width: 80% !important }
+.span-85  { width: 85% !important }
+.span-90  { width: 90% !important }
+.span-95  { width: 95% !important }
+.span-100 { width: 100% !important }
+/*Color text*/
+
+.text-black  { color: #000000 !important; }
+.text-blue   { color: #4487F2 !important; }
+.text-gray   { color: #777777 !important; }
+.text-green  { color: #8EA33B !important; }
+.text-orange { color: #F26225 !important; }
+.text-gold   { color: #E58537 !important; }
+.text-pink   { color: #E71E60 !important; }
+.text-purple { color: #643B85 !important; }
+.text-yellow { color: #F5DB2E !important; }
+.text-white  { color: #FFFFFF !important; }
+/*Text size*/
+
+.text-01 { font-size: 0.1em !important; }
+.text-02 { font-size: 0.2em !important; }
+.text-03 { font-size: 0.3em !important; }
+.text-04 { font-size: 0.4em !important; }
+.text-05 { font-size: 0.5em !important; }
+.text-06 { font-size: 0.6em !important; }
+.text-07 { font-size: 0.7em !important; }
+.text-08 { font-size: 0.8em !important; }
+.text-09 { font-size: 0.9em !important; }
+.text-10 { font-size: 1.0em !important; }
+.text-11 { font-size: 1.1em !important; }
+.text-12 { font-size: 1.2em !important; }
+.text-13 { font-size: 1.3em !important; }
+.text-14 { font-size: 1.4em !important; }
+.text-15 { font-size: 1.5em !important; }
+.text-16 { font-size: 1.6em !important; }
+.text-17 { font-size: 1.7em !important; }
+.text-18 { font-size: 1.8em !important; }
+.text-19 { font-size: 1.9em !important; }
+.text-20 { font-size: 2.0em !important; }
+.text-21 { font-size: 2.1em !important; }
+.text-22 { font-size: 2.2em !important; }
+.text-23 { font-size: 2.3em !important; }
+.text-24 { font-size: 2.4em !important; }
+.text-25 { font-size: 2.5em !important; }
+.text-30 { font-size: 3.0em !important; }
+.text-35 { font-size: 3.5em !important; }
+.text-40 { font-size: 4.0em !important; }
+.text-45 { font-size: 4.5em !important; }
+.text-50 { font-size: 5.0em !important; }
+/*Font style*/
+
+.text-bold       { font-weight: bold !important; }
+.text-italic     { font-style: italic !important; }
+.text-italics    { font-style: italic !important; }
+.text-uppercase  { text-transform: uppercase !important; }
+.text-lowercase  { text-transform: lowercase !important; }
+.text-capitalize { text-transform: capitalize !important; }
+.text-smallcaps  { font-variant: small-caps !important; }
+/*Text align*/
+
+.text-center { text-align: center; }
+.text-left   { text-align: left; }
+.text-right  { text-align: right; }
+
+/*HEADERS*/
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  margin: 0 0 20px 0;
+  color: #eee;
+  font-weight: normal;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: none;
+  word-wrap: break-word;
+  }
+
+  .reveal h2 {
+    font-size: 2.5em;
+    font-weight: normal;
+    font-family: "Oswald", sans-serif;
+    letter-spacing: -0.03em;
+    text-transform: none;
+    word-wrap: break-word;
+    text-shadow: 0 0 80px rgba(255,255,255,.5);
+    margin: 0 0 5px 0;
+}
+.reveal h3 {
+    font-size: 1.55em;
+    font-family: "Oswald", sans-serif;
+    text-shadow: 0 0 80px rgba(255,255,255,.5);
+    margin: 0 0 5px 0;
+}
+
+.midpoint {
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translate(0%, -50%);
+    position: fixed;
+    text-align: center;
+}
+
+/*H1*/
+
+.reveal .slide-background-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font: 400 1em/1.5 "Neuton";
+    background: #090d00;
+    color: rgba(255,255,255,.25);
+    text-align: center;
+    margin: 0;
+}
+
+.midpoint.h2-heading {
+    font: 700 2em/1 "Oswald", sans-serif;
+    letter-spacing: 0;
+    padding: .25em 0 .325em;
+    font-style: normal;
+    display: block;
+    border-top: 4px double rgba(255,255,255,.25);
+    text-transform: uppercase;
+    margin: 0 auto;
+    text-shadow: 0 0 80px rgba(255,255,255,.5);
+    width: 1000px;
+}
+
+
+.midpoint.h3-name {
+    text-transform: uppercase;
+    font: 700 0.7em/1 "Oswald", sans-serif;
+    letter-spacing: 0.1em;
+    font-style: oblique;
+    display: inline-block;
+    border-bottom: 4px double rgba(255,255,255,.25);
+    border-width: 4px 0;
+    text-shadow: 0 0 80px rgba(255,255,255,.5);
+    padding: 1.5em 0em;
+    position: absolute;
+    width: 40em;
+    margin: 0 0 0 -20em;
+}
+
+
+
+.north.entidad {
+    font: 700 0.5em/1 "Oswald", sans-serif;
+    border-top: 4px double rgba(255,255,255,.25);
+    border-bottom: 4px double rgba(255,255,255,.25);
+    text-transform: uppercase;
+    margin: 0 auto;
+    text-shadow: 0 0 80px rgba(255,255,255,.5);
+    top: 20px;
+    right: 20%;
+}
+
+.idea{
+    -moz-border-radius-topright: 20px;
+    -webkit-border-top-right-radius: 20px;
+    border-top-right-radius: 20px;
+    -moz-border-radius-bottomleft: 20px;
+    -webkit-border-bottom-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.idea #boxed-text-title {
+    font-size: 1em;
+    font-weight: bold;
+    border-bottom: 4px double rgba(255,255,255,.25);
+    letter-spacing: 0.1em;
+    text-align: left;
+    font-variant: small-caps;
+}
+.reveal span{
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-align: center;
+}
+
+.idea #boxed-text {
+    font-size: 0.6em;
+    margin: 0;
+    padding: 0.5em;
+    text-align: left;
+    text-shadow: 0 0 80px rgba(255,255,255,0.6);
+}
+
+
+li.li-nested-item #text{
+        font-size: 0.6em;
+}
+.reveal ul {
+    list-style-type: square;
+    font-size: 0.6em;
+    text-shadow: 0 0 80px rgba(255,255,255,0.6);
+}
+
+.reveal blockquote {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 20px auto;
+    padding: 5px;
+    font-style: italic;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+    font-size: 0.5em;
+    text-shadow: 0 0 80px rgba(255,255,255,0.6);
+}
+
+
+#boxed-text-box {
+    text-align: center;
+    text-shadow: 0 0 80px rgba(255,255,255,0.6);
+}
+.datos {
+    position: relative;
+    bottom: 160px;
+    left: 480px;
+}
+
+
+img:hover {
+    transform: scale(1.4);
+}
+
+.entidad_relacion{
+        color: #d0d0d0;
+        font-size: 0.6em !important;
+        text-shadow: 0 0 80px rgba(255,255,255,0.6);
+        position: relative;
+        bottom: 100px;
+}
+
+
+/*Imagen modelo entidad relacion*/
+.entidadimg {
+    transform: translate(-50%, -40%);
+}
+/*Boton descripcion del problema*/
+
+.problema {
+    font-size: 0.6em;
+    left: 5%;
+}
+
+}
+
+.enunciado {
+    position: fixed;
+    font-style: italic;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    text-shadow: 0 0 80px rgba(255,255,255,0.6);
+    right: 95%;
+}
+
+
+/*Diapositiva 3*/
+.funcionamiento {
+    position: relative;
+    top: -10px;
+    left: 0%;
+}
+
+.funcionamiento_lista{
+    content: "\2713 ";
+    font-size: 1.2em;
+    margin-left: -40px;
+    margin-right: 40px;
+    padding: .2em .45em .2em .45em;
+    position: relative;
+    color: white;
+    background-color: lighten(#859a31, 0%);
+}
+
+/*Diapositiva 4*/
+.west-sidebar.problema {
+    left: -8%;
+    position: fixed;
+    width: 25%;
+    font: 700 0.5em/1 "Oswald", sans-serif;
+    border-top: 4px double rgba(255,255,255,.25);
+    text-align: center;
+    border: 4px double rgba(255,255,255,.25);
+    text-shadow: 0 0 80px rgba(255,255,255,.5);
+    padding: 5px;
+}
+
+
+.east.relacional_1 {
+    left: 101%;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    top: 70%;
+}
+
+.east.relacional_2 {
+    left: 106%;
+}
+
+/*Flechas css*/
+.aentidad {
+    margin-top: 10%;
+    margin-left: 12%;
+    text-shadow: 0 0 80px rgba(255,255,255,0.6);
+}
+
+/*Diapositiva 3*/
+.d3-flecha {
+    left: 12%;
+    bottom: 10%;
+}
+
+/*Diapositiva 5*/
+
+.d5-text {
+    top: 95%;
+    left: 40%;
+}
+
+.d5-flecha {
+    top: 89%;
+    left: 46%;
+}
+
+/*Diapositiva 6*/
+
+.north.creacion {
+    font: 700 0.5em/1 "Oswald", sans-serif;
+    border-top: 4px double rgba(255,255,255,.25);
+    border-bottom: 4px double rgba(255,255,255,.25);
+    text-transform: uppercase;
+    margin: 0 auto;
+    text-shadow: 0 0 80px rgba(255,255,255,.5);
+    top: 20px;
+    right: 20%;
+}
+
+.windows {
+    background-image: url(https://akket.com/wp-content/uploads/2018/01/Microsoft-Windows-10-Polaris-6.jpg);
+    background-size: cover;
+    font-size: 0,6em;
+}
+
+.linux {
+    background-image: url(https://www.muyseguridad.net/wp-content/uploads/2017/12/Ubuntu.jpg);
+    background-size: contain;
+}
+
+.windows #boxed-text {
+    font-size: 0.6em;
+    margin: 0;
+    padding: 0.5em;
+    color: #090D00;
+    text-align: left;
+    text-shadow: 0 0 80px rgba(255,255,255,0.6);
+}
+
+.windows #boxed-text-title-box {
+    font-size: 1em;
+    text-transform: uppercase;
+    background-color: rgba(0,0,0,0);
+}
+
+.west.windowsbox.span-45 {
+    left: -14%;
+}
+
+.east.linuxbox.span-55 {
+    right: -14%;
+}
+
+.linux #boxed-text-title-box {
+    font-size: 1em;
+    text-transform: uppercase;
+    background-color: rgba(0,0,0,0);
+}
+
+.linux #boxed-text {
+    font-size: 0.6em;
+    margin: 0;
+    padding: 0.5em;
+    text-align: left;
+    color: #090D00;
+    text-shadow: 0 0 80px rgba(255,255,255,0.6);
+}
