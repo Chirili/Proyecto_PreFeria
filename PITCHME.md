@@ -86,5 +86,20 @@
 @box[windows](Windows#Principalmente el proyecto se ha realizado en windows con Oracle como gestor de base de datos y SQLDeveloper como entorno de desarrollo)
 @snapend
 @snap[east linuxbox span-55]
-@box[linux](Linux#La parte secundaria y para terminar de adornar el proyecto he utilizado ubuntu 19.04 como sistema operativo y oracle como gesto de base de datos, SQLPlus como conector hacia la base de datos y Asciinema, el cual es un programa que permite grabar terminales y despues mediante un video mostrarla y poder copiar el contenido de la misma mientras se va escribiendo)
+@box[linux](Linux#La parte secundaria y para terminar de adornar el proyecto he utilizado ubuntu 19.04 como sistema operativo y oracle como gestor de base de datos, SQLPlus como conector hacia la base de datos y Asciinema, el cual es un programa que permite grabar terminales y despues mediante un video mostrarla y poder copiar el contenido de la misma mientras se va escribiendo)
 @snapend
+
+
+@snap[south-west d6-text]
+@css[entidad_relacion](Create tables)
+@snapend
+@snap[south-west d6-flecha]
+@fa[arrow-down prueba]
+@snapend
+
++++?linear-gradient(to bottom, #090d0, #131c00);
+
+@snap[north creacion span-55]
+### Create table COMPANY
+@snapend
+

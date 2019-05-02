@@ -272,8 +272,6 @@ img:hover {
     left: 5%;
 }
 
-}
-
 .enunciado {
     position: fixed;
     font-style: italic;
@@ -350,7 +348,7 @@ img:hover {
 
 .d5-flecha {
     top: 89%;
-    left: 46%;
+    left: 50%;
 }
 
 /*Diapositiva 6*/
@@ -414,3 +412,15 @@ img:hover {
     color: #090D00;
     text-shadow: 0 0 80px rgba(255,255,255,0.6);
 }
+
+.d5-text {
+    top: 95%;
+    left: 40%;
+}
+
+.d5-flecha {
+    top: 89%;
+    left: 46%;
+}
+
+/*Diapositiva 7*/
