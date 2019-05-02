@@ -1,6 +1,11 @@
+<<<<<<< HEAD
+# Personal Theme
+theme: night
+=======
 
 theme-override : src/css/PITCHME.css
 theme : night
 transition : fade
 
 code-line-numbers : true
+>>>>>>> 127cda3cb37834962c786668a93d4acf06446bd5
