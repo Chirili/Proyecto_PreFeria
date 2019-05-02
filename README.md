@@ -216,3 +216,97 @@ CREATE TABLE ACTIVITY (
     ALTER TABLE PLACES MODIFY PLACE_ID NUMBER(6);
     ALTER TABLE PLACES_VISITED MODIFY PLACE_ID NUMBER(6);
     ```
+## Insert a las tabla
+
+```sql
+/*
+        *************************************
+        *Insert realizados a la tabla PLACES*
+        *************************************
+*/
+INSERT INTO PLACES VALUES(411111,'Andalucia','España');
+INSERT INTO PLACES VALUES(422222,'Barcelona','España');
+INSERT INTO PLACES VALUES(433333,'Madrid','España');
+INSERT INTO PLACES VALUES(444444,'Villa Baguette','Francia');
+INSERT INTO PLACES VALUES(455555,'Carcasona','Francia');
+INSERT INTO PLACES VALUES(466666,'Castelo Branco','Portugal');
+INSERT INTO PLACES VALUES(477777,'Santa Maria','Portugal');
+/*
+        *************************************
+        *Insert realizados a la tabla DRIVER*
+        *************************************
+*/
+INSERT INTO DRIVER VALUES(12345678,'Pepito','Grillo',NULL,'ES','02-05-2019');
+INSERT INTO DRIVER VALUES(87654321,'Paco','Paquito',NULL,'EN','15-04-2019');
+INSERT INTO DRIVER VALUES(11234567,'Ivan','Rustof',NULL,'FR','25-04-2019');
+/*
+Esta consulta la he utilizado comprobar que la constraint anteriormente puesta en la tabla este funcionando, poniendo como idioma PL.
+*/
+INSERT INTO DRIVER VALUES(12234567,'Manuel','Programa',NULL,'PL','23-04-2019');
+/*
+        ***********************************************************
+        *Inserts con subconsulta realizados a la tabla DRIVER_WORK*
+        ***********************************************************
+*/
+/*Primer insert*/
+INSERT INTO DRIVER_WORK(WORK_START_DATE,WORK_FINISH_DATE,COD_COMPANY,DRIVER_DNI)
+    VALUES(
+   '25-06-2019','30-06-2019', 
+        (SELECT COD_COMPANY
+            FROM COMPANY
+                WHERE COD_COMPANY=1111),
+                    (SELECT DNI
+                        FROM DRIVER
+                            WHERE DNI=12345678));
+/*Segundo insert*/
+INSERT INTO DRIVER_WORK(WORK_START_DATE,WORK_FINISH_DATE,DRIVER_DNI,COD_COMPANY)
+    VALUES
+        ('15-07-2019','25-07-2019',
+            (SELECT DNI
+                FROM DRIVER
+                    WHERE DNI=87654321),
+                        (SELECT COD_COMPANY
+                            FROM COMPANY
+                                WHERE COD_COMPANY=2222));
+/*Tercer insert*/
+INSERT INTO DRIVER_WORK(WORK_START_DATE,WORK_FINISH_DATE,DRIVER_DNI,COD_COMPANY)
+    VALUES
+    ('10-07-2019','25-07-2019',
+    (SELECT DNI
+        FROM DRIVER
+            WHERE DNI=11234567),
+                (SELECT COD_COMPANY
+                    FROM COMPANY WHERE COD_COMPANY=3333));
+/*Cuarto insert*/
+INSERT INTO DRIVER_WORK(WORK_START_DATE,WORK_FINISH_DATE,DRIVER_DNI,COD_COMPANY)
+    VALUES
+    ('02-05-2019','25-06-2019',
+    (SELECT DNI
+        FROM DRIVER
+            WHERE DNI=11234567),
+                (SELECT COD_COMPANY
+                    FROM COMPANY WHERE COD_COMPANY=1111));
+/*Quinto insert*/
+INSERT INTO DRIVER_WORK(WORK_START_DATE,WORK_FINISH_DATE,DRIVER_DNI,COD_COMPANY)
+    VALUES
+    ('02-05-2019','10-06-2019',
+    (SELECT DNI
+        FROM DRIVER
+            WHERE DNI=12345678),
+                (SELECT COD_COMPANY
+                    FROM COMPANY WHERE COD_COMPANY=2222));
+/*Sexto insert*/
+INSERT INTO DRIVER_WORK(WORK_START_DATE,WORK_FINISH_DATE,DRIVER_DNI,COD_COMPANY)
+    VALUES
+    ('02-05-2019','29-05-2019',
+    (SELECT DNI
+        FROM DRIVER
+            WHERE DNI=87654321),
+                (SELECT COD_COMPANY
+                    FROM COMPANY WHERE COD_COMPANY=4444));
+/*
+        **************************
+        *
+        ***************************
+*/
+```
