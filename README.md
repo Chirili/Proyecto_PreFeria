@@ -2,22 +2,41 @@
 
 ## Indice
 
+1. [Idea principal](#Idea-Principal)
+2. [¿Que es un tacografo digital?](#¿Y-que-es-un-tacógrafo-digital?)
+3. [Funcionamiento del tacógrafo digital](#Funcionamiento-del-tacógrafo-digital)
+4. [Datos que recoge el tacógrafo digital](#Datos-que-recoge-el-tacógrafo-digital)
+5. [Descrición del problema](#Descripción-del-problema)
+6. [Creación de las tablas](#Creación-de-las-tablas)
+7. [Restricciones a las tablas](#Restricciones-a-las-tablas)
+8. [Insert a las tablas](#Insert-a-las-tabla)
+9. [Updates](#Updates)
+10. [Deletes](#Deletes)
+11. [Consultas y subconsultas](#Consultas-y-subconsultas)
+
 ### Idea Principal
 La idea principal sobre el proyecto de pre-feria es hacer la estructura de una base de datos de un tacógrafo digital.
 
 ### ¿Y que es un tacógrafo digital?
 Un tacógrafo digital es un aparato electrónico que se encarga de registrar eventos en la conducción de vehiculos, su precursor fué el tacógrafo analógico, el cuál esta previsto que desaparezca completamente por el digital.
 
-### Funcionamiento del tacógrafo
+### Funcionamiento del tacógrafo digital
 El tacógrafo digital obtiene datos relativos a los tiempos de conducción y descansos del conductor. Esta información es la más importante de todas y constituye el sentido fundamental del tacógrafo.
 
-### Datos que recoge el tacógrafo.
+### Datos que recoge el tacógrafo digital
 Los eventos recogidos por el tacógrafo incluyen:
 - Conducción, descanso, otros trabajos.
 - Excesos de velocidad.
 - Errores en el sistema.
 - Conducción sin tarjeta.
 - Transferencias de datos: estos datos son almacenados tanto en la memoria del tacógrafo como en la de la tarjeta.
+
+### Modelo Entidad-Relacion
+
+![Modelo relacional del proyecto](https://github.com/Chirili/Proyecto_PreFeria/blob/master/src/images/modelo_entidad_relacion.jpg)
+
+### Modelo relacional
+
 
 ### Descripción del problema
 
@@ -50,8 +69,10 @@ Se necesita almacenar en la base de datos, los datos relacionados con un tacógr
     - La tarjeta tiene que tener **(Un ID de tarjeta, la fecha de expiración y la fecha de adquisición de la misma y por último el DNI del conductor que la está usando ).**
         > Hay que tener en cuenta que un conductor solo debe tener una tarjeta operativa al mismo tiempo, es decir, que si tiene mas de una tarjeta es porque las demás estan caducadas.
 
-> NOTA:
- >> En los lugares se necesita saber en que región se encuentra el conductor en dicho momento y la actividad se utiliza para saber todos lo que esta haciendo un conductor en un determinado momento. EJ: conductor X esta de descanso a las 10:00 y a las 10:05 esta conduciendo. Por lo tanto tenemos todos lo datos del conductor asi como el vehiculo que ha usado y a que compañia pertenece.
+> NOTAS:
+ >> Otro dato importante a saber para terminar de comprender las tablas es que todo tiene que estar relacionado entre sí ya que el conductor trabaja entre una serie de fechas mientras, en las cuales este conductor tiene que tener una tarjeta valida vigente para poder trabajar y usarla para recoger toda la actividad que este realize, aparte de eso en ese periodo de fechas, el conductor puede visitar X lugares los cuales tambien se tienen que registrar en la tabla junto al valor del cuantakilometros que tiene que ser acorde con el rango del cuenta kilometros especificado en la tabla del vehiculo usado y el periodo de salida estar a NULL ya que un conductor puede salir de un lugar pero despues tiene que volver así que si se quiere recoger esa vuelta no tiene sentido ponerle una fecha de salida al mismo lugar.
+
+ >> La actividad necesita de cientos de registros para poder comprenderla ya que cada dia que el conductor trabaja cada vez que este inserte los datos al tacógrafo sobre que está haciendo tienen que estar recogidos, por ejemplo el conductor X con DNI X estuvo de 6:00 a 6:15 de descanso y de 6:17 a 8:00 conduciendo y así una lista de estos registros. Ni que decir tiene que estos datos siempre tienen que estar siendo insertados con la tarjeta.
 
 ### Creación de las tablas
 
@@ -70,7 +91,9 @@ DROP TABLE PLACES;
 DROP TABLE COMPANY;
 
 /*
-La primera tabla en crearse es la de COMPANY
+        ***************************
+        *Creacion de la de COMPANY*
+        ***************************
 Esta primera tabla y la cabeza del trabajo es la recoge la informacion de la compañia en la que trabajan los conductores
 */
 CREATE TABLE COMPANY (
@@ -80,7 +103,9 @@ CREATE TABLE COMPANY (
     CONSTRAINT PK_COMPANY PRIMARY KEY(COD_COMPANY)
 );
 /*
-Segunda tabla en crearse es la tabla PLACES
+        *****************************
+        *Creacion de la tabla PLACES*
+        *****************************
 En esta tabla se recogen los lugares a los que viaja el conductor.
 */
 
@@ -91,7 +116,9 @@ CREATE TABLE PLACES (
     CONSTRAINT PK_PLACES PRIMARY KEY(PLACE_ID)
 );
 /*
-Tercera tabla en crearse es la tabla DRIVER
+        *****************************
+        *Creacion de la tabla DRIVER*
+        *****************************
 Esta es la tabla en la que se recogen los datos del conductor
 */
 
@@ -105,7 +132,9 @@ CREATE TABLE DRIVER (
     CONSTRAINT PK_DRIVER PRIMARY KEY(DNI)
 );
 /*
-Cuarta tabla en crearse es la tabla PLACES_VISITED
+        *************************************
+        *Creacion de la tabla PLACES_VISITED*
+        *************************************
 Que se encargará de almacenar la información de los lugares visitados por el conductor asi como la fecha de entrada y salida de estos
 */
 CREATE TABLE PLACES_VISITED(
@@ -119,7 +148,9 @@ CREATE TABLE PLACES_VISITED(
     CONSTRAINT FK_PLACES_VISITED_PLACES FOREIGN KEY(PLACE_ID) REFERENCES PLACES(PLACE_ID)
 );
 /*
-Quinta tabla en crearse es la tabla CDRIVER_WORK
+        **********************************
+        *Creación de la tabla DRIVER_WORK*
+        **********************************
 Esta tabla nace de la relacion N:M entre compañia y trabajador y se encarga de indicar en que momento el trabajador trabaja para una compañia u otra
 */
 
@@ -133,7 +164,9 @@ CREATE TABLE DRIVER_WORK (
     CONSTRAINT FK_DRIVERWORK_DRIVER FOREIGN KEY(DRIVER_DNI) REFERENCES DRIVER(DNI)
 );
 /*
-Sexta tabla en crearse es la tabla VEHICLE
+        ***************************
+        *Creacion la tabla VEHICLE*
+        ***************************
 Esta tabla recoge la informacion de los vehiculos de cada empresa
 */
 
@@ -145,7 +178,9 @@ CREATE TABLE VEHICLE (
     CONSTRAINT FK_VEHICLE_COMPNAY FOREIGN KEY(COMPANY_COD) REFERENCES COMPANY(COD_COMPANY)
 );
 /*
-Septima tabla en crearse es la tabla CVEHICLE_USED
+        ********************************
+        *Creacion la tabla VEHICLE_USED*
+        ********************************
 Esta tabla tambien es fundamental ya que se encarga de recoger los datos de los vehiculos cuando fueron usados por cuanto tiempo y el valor del cuenta kilometros cuando empezó y cuando acabó.
 */
 
@@ -161,7 +196,9 @@ CREATE TABLE VEHICLE_USED (
     CONSTRAINT FK_VEHICLEUSED_DIVER FOREIGN KEY(DRIVER_DNI) REFERENCES DRIVER (DNI)
 );
 /*
-Octava tabla en crearse es la tabla CARD
+        ***************************
+        *Creacion de la tabla CARD*
+        ***************************
 La tabla de la tarjeta se encarga de recoger los datos de las tarjetas de los conductores
 */
 
@@ -175,7 +212,9 @@ CREATE TABLE CARD (
 );
 
 /*
-Novena y ultima tabla en crearse es la tabla CACTIVITY
+        *******************************
+        *Creación de la tabla ACTIVITY*
+        *******************************
 Esta tabla es la mas importante ya que recoge la actividad del conductor estando en una compañia u otra, así como cuanto tiempo ha trabajado y los descansos realizados.
 */
 
@@ -216,6 +255,22 @@ CREATE TABLE ACTIVITY (
     ALTER TABLE PLACES MODIFY PLACE_ID NUMBER(6);
     ALTER TABLE PLACES_VISITED MODIFY PLACE_ID NUMBER(6);
     ```
+- Añadir una restricción que haga que la fecha de expiración de la tarjeta siempre sea mayor a la de adquisición.
+    ```SQL
+    ALTER TABLE CARD ADD CONSTRAINT CK_CARD_DATE CHECK(EXPIRATION_DATE < ACQUISITION_DATE);
+    ```
+- Añadir una restricción que haga que solo se puedan inserta los siguientes datos en la columna actividad de la tabla actividad: PAUSA/DESCANSO,CONDUCIENDO.
+    ```SQL
+    ALTER TABLE ACTIVITY ADD CONSTRAINT CK_ACTIVITY CHECK(ACTIVITY IN('PAUSA/DESCANSO','CONDUCIENDO'));
+    ```
+- Añadir una restricción al status de la tabla actividad que haga que solo se puedan poner las siguiente palabras: INSERTADA,NO INSERTADA.
+    ```SQL
+    ALTER TABLE ACTIVITY ADD CONSTRAINT CK_STATUS CHECK(STATUS IN('INSERTADA','NO INSERTADA'));
+    ```
+- Añadir una restricción al conductor de la tabla actividad que haga que solo se puedan insertar los siguientes dos valores: SOLITARIO,COOPILOTO.
+    ```SQL
+    ALTER TABLE ACTIVITY ADD CONSTRAINT CK_DRIVER CHECK(DRIVER IN('SOLITARIO','COOPILOTO'));
+    ```
 ## Insert a las tabla
 
 ```sql
@@ -248,6 +303,36 @@ INSERT INTO PLACES VALUES(477777,'Santa Maria','Portugal');
 INSERT INTO DRIVER VALUES(12345678,'Pepito','Grillo',NULL,'ES','02-05-2019');
 INSERT INTO DRIVER VALUES(87654321,'Paco','Paquito',NULL,'EN','15-04-2019');
 INSERT INTO DRIVER VALUES(11234567,'Ivan','Rustof',NULL,'FR','25-04-2019');
+/*
+        *********************************************
+        *Insert realizados a la tabla PLACES_VISITED*
+        *********************************************
+*/
+INSERT INTO PLACES_VISITED VALUES(12345678,411111,'26-06-2019','28-06-2019',55450);
+INSERT INTO PLACES_VISITED VALUES(12345678,411111,'27-06-2019',NULL,60360);
+INSERT INTO PLACES_VISITED VALUES(12345678,411111,'03-05-2019','06-05-2019',77895);
+INSERT INTO PLACES_VISITED VALUES(12345678,455555,'10-05-2019','15-05-2019',83650);
+INSERT INTO PLACES_VISITED VALUES(12345678,466666,'16-05-2019','25-05-2019',85780);
+INSERT INTO PLACES_VISITED VALUES(12345678,411111,'17-05-2019',NULL,88954);
+INSERT INTO PLACES_VISITED VALUES(87654321,433333,'15-07-2019','20-07-2019',40780);
+INSERT INTO PLACES_VISITED VALUES(87654321,422222,'20-07-2019','23-07-2019',46890);
+INSERT INTO PLACES_VISITED VALUES(87654321,433333,'25-07-2019',NULL,50000);
+INSERT INTO PLACES_VISITED VALUES(87654321,433333,'04-05-2019','10-05-2019',77856);
+INSERT INTO PLACES_VISITED VALUES(87654321,422222,'11-05-2019','20-05-2019',78452);
+INSERT INTO PLACES_VISITED VALUES(87654321,444444,'20-05-2019','29-05-2019',82450);
+INSERT INTO PLACES_VISITED VALUES(87654321,422222,'30-05-2019','05-06-2019',86451);
+INSERT INTO PLACES_VISITED VALUES(87654321,433333,'10-06-2019',NULL,88954);
+INSERT INTO PLACES_VISITED VALUES(11234567,477777,'10-07-2019','13-07-2019',145763);
+INSERT INTO PLACES_VISITED VALUES(11234567,466666,'13-07-2019','18-07-2019',149555);
+INSERT INTO PLACES_VISITED VALUES(11234567,411111,'18-07-2019','21-07-2019',152364);
+INSERT INTO PLACES_VISITED VALUES(11234567,466666,'21-07-2019','23-07-2019',156294);
+INSERT INTO PLACES_VISITED VALUES(11234567,477777,'25-07-2019',NULL,160000);
+INSERT INTO PLACES_VISITED VALUES(11234567,455555,'02-05-2019','14-05-2019',63564);
+INSERT INTO PLACES_VISITED VALUES(11234567,444444,'14-05-2019','27-05-2019',66894);
+INSERT INTO PLACES_VISITED VALUES(11234567,422222,'27-05-2019','10-06-2019',68546);
+INSERT INTO PLACES_VISITED VALUES(11234567,455555,'25-06-2019',NULL,71654);
+/*Insert de prueba para comprobar que la constraint funciona correctamente*/
+INSERT INTO PLACES_VISITED VALUES(11234567,455555,'28-06-2019','26-06-2019',71654);
 /*
 Esta consulta la he utilizado comprobar que la constraint anteriormente puesta en la tabla este funcionando, poniendo como idioma PL.
 */
@@ -337,7 +422,161 @@ INSERT INTO VEHICLE VALUES(44444441,'España',4444);
 INSERT INTO VEHICLE_USED VALUES('25-06-2019','30-06-2019',50560,60360,11111113,12345678);
 INSERT INTO VEHICLE_USED VALUES('15-07-2019','25-07-2019',30800,50000,22222224,87654321);
 INSERT INTO VEHICLE_USED VALUES('10-07-2019','25-07-2019',140000,160000,33333336,11234567);
-INSERT INTO VEHICLE_USED VALUES('02-05-2019','25-06-2019',60651,71654,11111112,87654321);
-INSERT INTO VEHICLE_USED VALUES('02-05-2019','10-06-2019',75640,88954,11111113,11234567);
-INSERT INTO VEHICLE_USED VALUES('02-05-2019','10-06-2019',75640,88954,11111113,11234567);
+INSERT INTO VEHICLE_USED VALUES('02-05-2019','25-06-2019',60651,71654,11111112,11234567);
+INSERT INTO VEHICLE_USED VALUES('05-05-2019','10-06-2019',75640,88954,11111113,12345678);
+INSERT INTO VEHICLE_USED VALUES('04-05-2019','10-06-2019',75640,88954,44444449,87654321);
+/*
+        ***********************************
+        *Insert realizados a la tabla CARD*
+        ***********************************
+*/
+INSERT INTO CARD VALUES('11122233','01-07-2019','01-06-2019',12345678);
+INSERT INTO CARD VALUES('22233344','03-03-2019','02-02-2019',12345678);
+INSERT INTO CARD VALUES('55566677','31-05-2019','04-05-2019',12345678);
+INSERT INTO CARD VALUES('33344455','02-07-2019','20-06-2019',87654321);
+INSERT INTO CARD VALUES('66677788','15-06-2019','03-05-2019',87654321);
+INSERT INTO CARD VALUES('77788899','29-07-2019','05-07-2019',11234567);
+INSERT INTO CARD VALUES('88899911','15-06-2019','03-05-2019',11234567);
+INSERT INTO CARD VALUES('99911122','15-03-2019','10-02-2019',11234567);
+/*Insert de prueba para ver que la constraint esta correctamente configurada*/
+INSERT INTO CARD VALUES('77788894','10-01-2019','10-02-2019',11234567);
+/*
+        ***************************************
+        *Insert realizados a la tabla ACTIVITY*
+        ***************************************
+*/
+INSERT INTO ACTIVITY VALUES(12345,'PAUSA/DESCANSO','INSERTADA',NULL,'SOLITARIO',TO_DATE('25-06-2019 08:00','DD-MM-YYYY HH:MI'),1111,12345678);
+INSERT INTO ACTIVITY VALUES(12346,'CONDUCIENDO','INSERTADA',NULL,'SOLITARIO',TO_DATE('25-06-2019 08:15','DD-MM-YYYY HH:MI'),1111,12345678);
+INSERT INTO ACTIVITY VALUES(12344,'PAUSA/DESCANSO','INSERTADA',NULL,'SOLITARIO',TO_DATE('25-06-2019 10:15','DD-MM-YYYY HH:MI'),1111,12345678);
+INSERT INTO ACTIVITY VALUES(12343,'PAUSA/DESCANSO','INSERTADA',NULL,'SOLITARIO',TO_DATE('25-06-2019 10:17','DD-MM-YYYY HH:MI'),1111,12345678);
+INSERT INTO ACTIVITY VALUES(12342,'CONDUCIENDO','INSERTADA',NULL,'SOLITARIO',TO_DATE('25-06-2019 10:19','DD-MM-YYYY HH:MI'),1111,12345678);
+```
+
+### Updates
+- Aumentar en un 20% el valor del cuenta kilometros final de la tabla vehiculos usados cuando el nombre del conductor sea Ivan
+```sql
+UPDATE VEHICLE_USED
+SET ODOMETER_FINISH = ODOMETER_FINISH*1.20
+WHERE DRIVER_DNI=(SELECT DNI FROM DRIVER WHERE DRIVER_NAME='Ivan');
+```
+- Actualizar el valor de la tabla lugares visitados solo cuando el nombre dle conductor sea el de Ivan y el exit date sea NULL.
+```sql
+UPDATE PLACES_VISITED
+SET ODOMETER_VALUE = (SELECT ODOMETER_FINISH FROM VEHICLE_USED WHERE ODOMETER_FINISH > 100000)
+WHERE DRIVER_DNI=(SELECT DNI FROM DRIVER WHERE DRIVER_NAME='Ivan') AND EXIT_DATE IS NULL;
+```
+- Cambiar la nacion de registro de los vehiculos a Francia cuando el nombre de la compañia sea Pre S.A.
+```SQL
+UPDATE VEHICLE
+SET VEHICLE_NATION_REGISTER = 'Francia'
+WHERE COMPANY_COD=(SELECT COD_COMPANY FROM COMPANY WHERE COMPANY_NAME='Pre S.A');
+```
+
+### Deletes
+
+- Borrar el registro de la tabla trabajo del conductor cuando la compañia sea Final S.L y el nombre del conductor sea Pepito
+```SQL
+DELETE FROM DRIVER_WORK 
+WHERE COD_COMPANY=(SELECT COD_COMPANY FROM COMPANY WHERE COMPANY_NAME LIKE 'Final S.L') AND DRIVER_DNI=(SELECT DNI FROM DRIVER WHERE DRIVER_NAME LIKE 'Pepito');
+```
+- Borrar el registro de la tabla lugares visitados cuando el nombre de la region sea Villa Baguette y la fecha de salida sea igual a 29-05-2019.
+```sql
+DELETE FROM PLACES_VISITED
+WHERE PLACE_ID=(SELECT PLACE_ID FROM PLACES WHERE REGION LIKE 'Villa Baguette') AND EXIT_DATE='29-05-2019';
+```
+- Borrar los registros de la tabla places_visited donde el nombre del conductor sea Paco y la fecha de entrada este comprendida entre 05-05-2019 y 20-05-2019.
+```SQL
+DELETE FROM PLACES_VISITED
+WHERE DRIVER_DNI=(SELECT DNI FROM DRIVER WHERE DRIVER_NAME LIKE 'Paco') AND ENTRY_DATE > '05-05-2019' AND ENTRY_DATE < '20-05-2019';
+```
+### Consultas y Subconsultas
+
+- Seleccionar el nombre de los conductores que tengan mas de una tarjeta.
+```sql
+SELECT DRIVER_NAME
+    FROM CARD, DRIVER
+        WHERE CARD.DRIVER_DNI=DRIVER.DNI
+            GROUP BY DRIVER_NAME
+                HAVING COUNT(DRIVER_DNI)>1;
+```
+- Seleccionar el nombre de los conductores los cuales tienen tarjeta caducadas a dia de hoy.
+```sql
+SELECT DRIVER_NAME
+    FROM CARD, DRIVER
+        WHERE CARD.DRIVER_DNI=DRIVER.DNI AND EXPIRATION_DATE < SYSDATE;
+```
+- Seleccionar el nombre de las compañias cuando la nacion de registro sea Francia o el codigo de compañia sea 4444.
+```sql
+SELECT COMPANY_NAME
+    FROM COMPANY
+        WHERE COD_COMPANY 
+            IN(SELECT COMPANY_COD
+                FROM VEHICLE
+                    WHERE VEHICLE_NATION_REGISTER
+                        LIKE 'Francia'
+                            OR COMPANY_COD=4444);
+```
+- Seleccionar el nombre de la compañia que tiene el ultimo uso del cuanta kilometros mas alto.
+```sql
+SELECT COMPANY_NAME
+    FROM COMPANY
+        WHERE COD_COMPANY=(SELECT COMPANY_COD
+                                FROM VEHICLE
+                                    WHERE VEHICLE_REGISTER_NUM=(SELECT VEHICLE_REGISTER_NUM
+                                                                    FROM VEHICLE_USED
+                                                                        WHERE ODOMETER_FINISH=(SELECT MAX(ODOMETER_FINISH)
+                                                                                                    FROM VEHICLE_USED)));
+
+```
+- Mostrar el nombre del conductor que haya trabajado mas de una vez con la misma compañia.
+```sql
+SELECT DRIVER_NAME
+    FROM DRIVER_WORK,DRIVER
+        WHERE DRIVER.DNI=DRIVER_WORK.DRIVER_DNI
+            GROUP BY DRIVER_NAME
+                HAVING COUNT(DISTINCT COD_COMPANY)=1;
+```
+- Mostrar el nombre de las regiones las cuales han sido visitadas por mas de un conductor.
+```sql
+SELECT REGION
+    FROM PLACES
+        JOIN PLACES_VISITED
+            ON PLACES.PLACE_ID = PLACES_VISITED.PLACE_ID
+                GROUP BY REGION
+                    HAVING COUNT(DRIVER_DNI)>1;
+```
+- Mostrar el nombre de la compañia y el numero de registro del vehiculo cuando el valor del cuenta kilometros del ultimo uso de un vehiculo sea igual al valor del cuenta kilometros de la tabla lugares visitados.
+```sql
+SELECT C.COMPANY_NAME,VEHICLE_USED.VEHICLE_REGISTER_NUM
+    FROM VEHICLE_USED
+        JOIN VEHICLE
+            ON VEHICLE_USED.VEHICLE_REGISTER_NUM=VEHICLE.VEHICLE_REGISTER_NUM
+                JOIN COMPANY C
+                    ON VEHICLE.COMPANY_COD=C.COD_COMPANY
+                        JOIN PLACES_VISITED P
+                            ON VEHICLE_USED.ODOMETER_FINISH=P.ODOMETER_VALUE
+                                GROUP BY C.COMPANY_NAME,VEHICLE_USED.VEHICLE_REGISTER_NUM;
+```
+- Seleccionar la media del cuanta kilometros de la tabla lugares visitados.
+```SQL
+SELECT AVG(ODOMETER_VALUE)
+    FROM PLACES_VISITED;
+```
+- Contar el numero de vehiculos que tiene cada compañia.
+```sql
+SELECT COMPANY_NAME,COUNT(VEHICLE_REGISTER_NUM) AS Numero_Vehiculos
+    FROM COMPANY, VEHICLE
+        WHERE COMPANY.COD_COMPANY=VEHICLE.COMPANY_COD
+            GROUP BY COMPANY_NAME;
+```
+- Mostrar el nombre del conductor y el nombre de la region la cual haya sido visitada mas de 2 veces.
+```sql
+SELECT DRIVER_NAME,PLACES.REGION
+    FROM DRIVER
+        JOIN PLACES_VISITED
+            ON DRIVER.DNI = PLACES_VISITED.DRIVER_DNI
+                JOIN PLACES
+                    ON PLACES.PLACE_ID = PLACES_VISITED.PLACE_ID
+                        GROUP BY DRIVER_NAME,PLACES.REGION
+                            HAVING COUNT(PLACES.REGION)>2;
 ```
