@@ -3,21 +3,24 @@
 ## Indice
 
 1. [Idea principal](#Idea-Principal)
-2. [¿Que es un tacografo digital?](#¿Y-que-es-un-tacógrafo-digital?)
+2. [¿Que es un tacografo digital?](#Y-que-es-un-tacógrafo-digital)
 3. [Funcionamiento del tacógrafo digital](#Funcionamiento-del-tacógrafo-digital)
 4. [Datos que recoge el tacógrafo digital](#Datos-que-recoge-el-tacógrafo-digital)
-5. [Descrición del problema](#Descripción-del-problema)
-6. [Creación de las tablas](#Creación-de-las-tablas)
-7. [Restricciones a las tablas](#Restricciones-a-las-tablas)
-8. [Insert a las tablas](#Insert-a-las-tabla)
-9. [Updates](#Updates)
-10. [Deletes](#Deletes)
-11. [Consultas y subconsultas](#Consultas-y-subconsultas)
+5. [Modelo entidad relacion](#Modelo-entidad-relacion)
+6. [Modelo relacional](#Modelo-relacional)
+7. [Descrición del problema](#Descripción-del-problema)
+8. [Creación de las tablas](#Creación-de-las-tablas)
+9. [Restricciones a las tablas](#Restricciones-a-las-tablas)
+10. [Insert a las tablas](#Insert-a-las-tabla)
+11. [Updates](#Updates)
+12. [Deletes](#Deletes)
+13. [Consultas y subconsultas](#Consultas-y-subconsultas)
+14. [Vistas](#Vistas)
 
 ### Idea Principal
 La idea principal sobre el proyecto de pre-feria es hacer la estructura de una base de datos de un tacógrafo digital.
 
-### ¿Y que es un tacógrafo digital?
+### Y que es un tacógrafo digital
 Un tacógrafo digital es un aparato electrónico que se encarga de registrar eventos en la conducción de vehiculos, su precursor fué el tacógrafo analógico, el cuál esta previsto que desaparezca completamente por el digital.
 
 ### Funcionamiento del tacógrafo digital
@@ -33,10 +36,11 @@ Los eventos recogidos por el tacógrafo incluyen:
 
 ### Modelo Entidad-Relacion
 
-![Modelo relacional del proyecto](https://github.com/Chirili/Proyecto_PreFeria/blob/master/src/images/modelo_entidad_relacion.jpg)
+![Modelo entidad relacion](https://github.com/Chirili/Proyecto_PreFeria/blob/master/src/images/modelo_entidad_relacion.jpg)
 
 ### Modelo relacional
 
+![Modelo relacional del proyecto](https://github.com/Chirili/Proyecto_PreFeria/blob/master/src/images/modelo_relacional.jpg)
 
 ### Descripción del problema
 
@@ -75,6 +79,9 @@ Se necesita almacenar en la base de datos, los datos relacionados con un tacógr
  >> La actividad necesita de cientos de registros para poder comprenderla ya que cada dia que el conductor trabaja cada vez que este inserte los datos al tacógrafo sobre que está haciendo tienen que estar recogidos, por ejemplo el conductor X con DNI X estuvo de 6:00 a 6:15 de descanso y de 6:17 a 8:00 conduciendo y así una lista de estos registros. Ni que decir tiene que estos datos siempre tienen que estar siendo insertados con la tarjeta.
 
 ### Creación de las tablas
+
+<details>
+    <summary>Clica aquí para ver la creación de las tablas</summary>
 
 ```sql
 /*
@@ -232,6 +239,9 @@ CREATE TABLE ACTIVITY (
     CONSTRAINT FK_ACTIVITY_DRIVER FOREIGN KEY(DRIVER_DNI) REFERENCES DRIVER(DNI)
 ); 
 ```
+</details>
+
+
 ### Restricciones a las tablas
 
 - Añadir una restricción que haga que el idioma preferido del conductor solo puedan ser: ES, EN, FR.
@@ -272,6 +282,8 @@ CREATE TABLE ACTIVITY (
     ALTER TABLE ACTIVITY ADD CONSTRAINT CK_DRIVER CHECK(DRIVER IN('SOLITARIO','COOPILOTO'));
     ```
 ## Insert a las tabla
+<details>
+    <summary>Clica aquí para ver los inserts realizados</summary>
 
 ```sql
 /*
@@ -451,6 +463,8 @@ INSERT INTO ACTIVITY VALUES(12344,'PAUSA/DESCANSO','INSERTADA',NULL,'SOLITARIO',
 INSERT INTO ACTIVITY VALUES(12343,'PAUSA/DESCANSO','INSERTADA',NULL,'SOLITARIO',TO_DATE('25-06-2019 10:17','DD-MM-YYYY HH:MI'),1111,12345678);
 INSERT INTO ACTIVITY VALUES(12342,'CONDUCIENDO','INSERTADA',NULL,'SOLITARIO',TO_DATE('25-06-2019 10:19','DD-MM-YYYY HH:MI'),1111,12345678);
 ```
+</details>
+
 
 ### Updates
 - Aumentar en un 20% el valor del cuenta kilometros final de la tabla vehiculos usados cuando el nombre del conductor sea Ivan
@@ -579,4 +593,34 @@ SELECT DRIVER_NAME,PLACES.REGION
                     ON PLACES.PLACE_ID = PLACES_VISITED.PLACE_ID
                         GROUP BY DRIVER_NAME,PLACES.REGION
                             HAVING COUNT(PLACES.REGION)>2;
+```
+
+### Vistas
+
+- Crear una vista que permita visualizar el nombre del trabajador y el numero de tarjetas que tiene tanto caducadas como validas.
+
+```sql
+CREATE VIEW NUMERO_TARJETAS AS
+    SELECT DRIVER_NAME, COUNT(CARD_ID)AS Numero_tarjetas
+        FROM DRIVER, CARD
+            WHERE DRIVER.DNI=CARD.DRIVER_DNI
+                GROUP BY DRIVER_NAME;
+```
+- Crear una vista que permita visualizar el nombre de compañia y la cantidad de vehiculos que tiene.
+```sql
+CREATE VIEW NUMERO_VEHICULOS AS
+    SELECT COMPANY_NAME, COUNT(VEHICLE_REGISTER_NUM) AS Numero_vehiculos
+        FROM COMPANY, VEHICLE
+            WHERE COMPANY.COD_COMPANY=VEHICLE.COMPANY_COD
+                GROUP BY COMPANY_NAME;
+```
+- Crear una vista que permita visualizar el nombre de la compañia y la cantidad de vehiculos que estan siendo usados en el mes que actual.
+```sql
+CREATE VIEW VEHICULOS_MAYO AS
+    SELECT C.COMPANY_NAME,COUNT(V.VEHICLE_REGISTER_NUM) AS Numero_vehiculos_usados
+        FROM COMPANY C, VEHICLE V,VEHICLE_USED VU
+            WHERE C.COD_COMPANY=V.COMPANY_COD
+                AND V.VEHICLE_REGISTER_NUM=VU.VEHICLE_REGISTER_NUM
+                    AND TO_CHAR(FIRST_USE_DATE, 'month')=TO_CHAR(SYSDATE, 'month')
+                        GROUP BY C.COMPANY_NAME;
 ```
