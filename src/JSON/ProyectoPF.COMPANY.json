@@ -1,0 +1,21 @@
+{ 
+    "_id" : ObjectId("5ccc33b083a73796f8da66d5"), 
+    "COD_COMPANY" : [
+        1111.0, 
+        2222.0, 
+        3333.0, 
+        4444.0
+    ], 
+    "COMPANY_NAME" : [
+        "Proyecto S.L", 
+        "Final S.L", 
+        "Pre S.A", 
+        "Feria C"
+    ], 
+    "CP" : [
+        43030.0, 
+        45035.0, 
+        43075.0, 
+        41230.0
+    ]
+}

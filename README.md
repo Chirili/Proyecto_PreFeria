@@ -16,7 +16,7 @@
 12. [Deletes](#Deletes)
 13. [Consultas y subconsultas](#Consultas-y-subconsultas)
 14. [Vistas](#Vistas)
-
+15. [¿Creación de las tablas en MongoDB?](#Creacion-de-las-tablas-en-MONGODB)
 ### Idea Principal
 La idea principal sobre el proyecto de pre-feria es hacer la estructura de una base de datos de un tacógrafo digital.
 
@@ -623,4 +623,61 @@ CREATE VIEW VEHICULOS_MAYO AS
                 AND V.VEHICLE_REGISTER_NUM=VU.VEHICLE_REGISTER_NUM
                     AND TO_CHAR(FIRST_USE_DATE, 'month')=TO_CHAR(SYSDATE, 'month')
                         GROUP BY C.COMPANY_NAME;
+```
+
+### Creacion de las tablas en MONGODB
+
+```json
+db.COMPANY.insert({
+    "COD_COMPANY":[
+        1111,
+        2222,
+        3333,
+        4444
+        ],
+    "COMPANY_NAME":[
+        "Proyecto S.L",
+        "Final S.L",
+        "Pre S.A",
+        "Feria C"
+        ],
+    "CP":[
+        43030,
+        45035,
+        43075,
+        41230
+        ]
+    }
+)
+
+db.PLACES.insert({
+    "place_id":[
+    	411111,
+		422222,
+		433333,
+		444444,
+		455555,
+		466666,
+		477777
+	],
+	"region":[
+		"Andalucia",
+		"Barcelona",
+		"Madrid",
+		"Villa Baguette",
+		"Carcasona",
+		"Castelo Branco",
+		"Santa Maria"
+	],
+	"country":[
+		"España",
+		"España",
+		"España",
+		"Francia",
+		"Francia",
+		"Portugal",
+		"Portugal"
+	]
+}
+
 ```
